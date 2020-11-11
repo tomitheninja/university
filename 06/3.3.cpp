@@ -9,7 +9,7 @@ int count_divisors(int x)
     {
         if (x % i == 0)
         {
-            sum += i;
+            sum++;
         }
     }
     return sum;

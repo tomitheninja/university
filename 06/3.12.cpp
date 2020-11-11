@@ -6,15 +6,22 @@ int main()
 {
     int n;
     cin >> n;
-    int min_so_far = n;
-    int max_so_far = n;
-    while (cin >> n && n != 0)
+    int min = n;
+    int max = n;
+    for (int i = 0; i < n; i++)
     {
-        if (n % 2 == 0)
+        int x;
+        cin >> x;
+        if (x < min)
         {
-            min_so_far++;
+            min = x;
+        }
+        if (x > max)
+        {
+            max = x;
         }
     }
-    cout << min_so_far << endl;
+    cout << min << endl;
+    cout << max << endl;
     return 0;
 }

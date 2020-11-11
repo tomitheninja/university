@@ -5,7 +5,7 @@ using namespace std;
 int count_divisors(int x)
 {
     int sum = 0;
-    for (int i = 2; i < x; i++)
+    for (int i = 1; i <= x; i++)
     {
         if (x % i == 0)
         {
