@@ -1,0 +1,19 @@
+** Add meg egy tetsz?leges egész számsorban a szomszédos elemek átlagos különbségét.
+PROGRAM p
+    VÁLTOZÓK:
+      i, n: EGÉSZ,
+      sum, x, y: VALÓS
+   
+    BE: n
+    sum := 0
+    BE: x
+    i := 1
+    CIKLUS AMÍG i < n - 1
+      BE: y
+      sum := sum + |x - y|
+      x := y
+      i := i + 1
+    CIKLUS_VÉGE
+    KI: sum / (VALÓS n - 1)
+  PROGRAM_VÉGE
+  

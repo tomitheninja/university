@@ -1,0 +1,18 @@
+** etsz?leges, koordinátákkal adott pontsorozatban add meg az origótól legtávolabb es? pontot.
+PROGRAM p
+    VÁLTOZÓK:
+        n, i: EGÉSZ
+        x,y, max: VALÓS
+    
+    BE: n
+    i := 1
+    CIKLUS AMÍG i <= n
+        BE: x, y
+        HA (x*x + y*y)^0.5 > max AKKOR
+            max := (x*x + y*y)^0.5
+        HA_VÉGE
+    CIKLUS_VÉGE
+
+    KI: max
+    
+PROGRAM_VÉGE

@@ -1,0 +1,37 @@
+PROGRAM p
+    VÁLTOZÓK:
+        f1, f2: BEFÁJL,
+        fout: KIFÁJL,
+        x, y: VALÓS
+    
+    MEGNYIT fout: "kifajl.txt"
+    
+    x := 0
+    MEGNYIT f1: "befajl1.txt"
+    MEGNYIT f2: "befajl2.txt"
+    BE f1: x
+    BE f2: y
+    CIKLUS AMÍG NEM VÉGE f1 ÉS NEM VÉGE f2
+        HA x < y AKKOR
+            KI fout: x, ' '
+            BE f1: x
+        KÜLÖNBEN
+            KI fout: y, ' '
+            BE f2: y
+        HA_VÉGE
+    CIKLUS_VÉGE
+
+    CIKLUS AMÍG NEM VÉGE f1
+        KI fout: x
+        BE f1: x
+    CIKLUS_VÉGE
+
+    CIKLUS AMÍG NEM VÉGE f2
+        KI fout: y
+        BE f2: y
+    CIKLUS_VÉGE
+   
+    LEZÁR f1
+    LEZÁR f2
+    LEZÁR fout
+PROGRAM_VÉGE

@@ -1,0 +1,19 @@
+PROGRAM p
+    V¡ÅLTOZ”K:
+      max_so_far, x, y, n, i: EG…âSZ
+   
+    BE: n
+    BE: y
+    i := 1
+    max_so_far := 0
+    CIKLUS AMÕçG i < n
+      x := y
+      BE: y
+      HA max_so_far < |x - y| AKKOR
+        max_so_far := |x - y|
+      HA_V…âGE
+      i := i + 1
+    CIKLUS_V…âGE
+    KI: max_so_far
+  PROGRAM_V…âGE
+  

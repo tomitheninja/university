@@ -1,0 +1,16 @@
+** Add meg egy természetes szám legnagyobb valódi osztóját.
+PROGRAM p
+    VÁLTOZÓK:
+        n, i, max, talalt: EGÉSZ
+    
+    BE: n
+    talalt := 0
+    i := 2
+    CIKLUS AMÍG talalt = 0 ÉS i < n
+        HA n MOD i = 0 AKKOR
+            talalt := 1
+            KI: KEREK (VALÓS n / VALÓS i)
+        HA_VÉGE
+        i := i + 1
+    CIKLUS_VÉGE
+PROGRAM_VÉGE

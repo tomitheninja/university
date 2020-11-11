@@ -1,0 +1,18 @@
+PROGRAM p
+  VÁLTOZÓK:
+    name: SZÖVEG,
+    c: KARAKTER,
+    i: EGÉSZ,
+    many_found_so_far: EGÉSZ
+ 
+  BE: name
+  i := 0
+  many_found_so_far := 0
+  CIKLUS AMÍG i < |name|
+    HA many_found_so_far < 2 ÉS (i = 0 VAGY name[i - 1] = ' ' ÉS name[i] /= ' ') AKKOR
+      KI: name[i], ". "
+      many_found_so_far := many_found_so_far + 1
+    HA_VEGE
+    i := i + 1
+  CIKLUS_VEGE
+PROGRAM_VEGE

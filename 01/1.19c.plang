@@ -1,0 +1,9 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    txt, without_first, without_second: SZÖVEG
+ 
+  BE: txt
+  without_first := txt[1 + (txt @ ' '):|txt|]
+  KI: without_first[0:(without_first @ ' ')]
+PROGRAM_VEGE
+

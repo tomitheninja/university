@@ -1,0 +1,12 @@
+PROGRAM p
+  VÁLTOZÓK:
+    txt: SZÖVEG,
+    i: EGÉSZ
+ 
+  BE: txt
+  i := |txt|
+  CIKLUS AMÍG i >= 1
+    KI: txt[i - 1]
+    i := i - 1
+  CIKLUS_VEGE
+PROGRAM_VEGE

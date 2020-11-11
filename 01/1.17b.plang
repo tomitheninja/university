@@ -1,0 +1,10 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    txt: SZÖVEG,
+    len: EGÉSZ
+ 
+  BE: txt
+  len := |txt|
+  KI: NAGY txt[0] = NAGY txt[len - 1]
+PROGRAM_VEGE
+

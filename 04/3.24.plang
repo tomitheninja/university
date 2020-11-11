@@ -1,0 +1,19 @@
+** Add meg egy tetsz?leges szövegb?l a leghosszabb sort.
+PROGRAM p
+    VÁLTOZÓK:
+      best, x: SZÖVEG,
+      i, n: EGÉSZ
+   
+    BE: n
+    BE: best
+    i := 1
+    CIKLUS AMÍG i <= n
+      BE: x
+      HA |x| > |best| AKKOR
+        best := x
+      HA_VÉGE
+      i := i + 1
+    CIKLUS_VÉGE
+    KI: best
+  PROGRAM_VÉGE
+  

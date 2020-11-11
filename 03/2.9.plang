@@ -1,0 +1,20 @@
+PROGRAM p
+  VÁLTOZÓK:
+    b, c, a: EGÉSZ
+ 
+  a := 1
+  CIKLUS AMÍG a < 10
+    b := 1
+    CIKLUS AMÍG b < 10
+      c := 1
+      CIKLUS AMÍG c < 10
+        HA b * b - 4 * a * c = 0 AKKOR
+          KI: a, ' ', b, ' ', c, SV
+        HA_VEGE
+        c := c + 1
+      CIKLUS_VEGE
+      b := b + 1
+    CIKLUS_VEGE
+    a := a + 1
+  CIKLUS_VEGE
+PROGRAM_VEGE

@@ -1,0 +1,15 @@
+PROGRAM p
+  VÁLTOZÓK:
+    name: SZÖVEG,
+    c: KARAKTER,
+    i: EGÉSZ
+ 
+  BE: name
+  i := 0
+  CIKLUS AMÍG i < |name|
+    HA i = 0 VAGY name[i - 1] = ' ' ÉS name[i] /= ' ' AKKOR
+      KI: name[i], ". "
+    HA_VEGE
+    i := i + 1
+  CIKLUS_VEGE
+PROGRAM_VEGE

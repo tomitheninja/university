@@ -1,0 +1,16 @@
+** Add meg egy természetes szám osztóinak összegét.
+PROGRAM p
+  VÁLTOZÓK:
+    n, i, sum: EGÉSZ
+ 
+  BE: n
+  i := 1
+  sum := 0
+  CIKLUS AMÍG i <= n
+    HA n MOD i = 0 AKKOR
+      sum := sum + i
+    HA_VÉGE
+    i := i + 1
+  CIKLUS_VÉGE
+  KI: sum
+PROGRAM_VÉGE

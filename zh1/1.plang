@@ -1,0 +1,8 @@
+PROGRAM p1
+    VÁLTOZÓK:
+        irszam: EGÉSZ
+    
+    BE: irszam
+    KI: 1000 <= irszam ÉS irszam <= 1229
+    
+PROGRAM_VÉGE

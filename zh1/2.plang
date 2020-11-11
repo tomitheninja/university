@@ -1,0 +1,23 @@
+PROGRAM p2
+    VÁLTOZÓK:
+        n, x, y: EGÉSZ
+    
+    BE: n
+    y := 0
+    CIKLUS AMÍG y < n
+        x := 0
+        CIKLUS AMÍG x < n
+            HA |(x - y)| <= 1 VAGY |((n-1-x)-y)| <= 1 AKKOR
+                KI: '*'
+            KÜLÖNBEN
+                KI: ' '
+            HA_VÉGE
+            
+            
+            x := x + 1
+        CIKLUS_VÉGE
+        KI: SV
+        y := y + 1
+    CIKLUS_VÉGE
+    
+PROGRAM_VÉGE

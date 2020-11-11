@@ -1,0 +1,7 @@
+PROGRAM p
+    VÁLTOZÓK:
+        a, b, c: VALÓS
+
+    BE: a, b, c
+    KI: a + b + c
+PROGRAM_VÉGE

@@ -1,0 +1,28 @@
+** Add meg egy tetsz?leges egész számsorban a prímszámok számát.
+PROGRAM p
+    VÁLTOZÓK:
+      n, x, i, j, prim_e, db: EGÉSZ
+   
+    BE: n
+    i := 0
+    db := 0
+    CIKLUS AMÍG i < n
+      BE: x
+      j := 2
+      HA x < 2 AKKOR
+        prim_e := 0
+      KÜLÖNBEN
+        prim_e := 1
+      HA_VÉGE
+      CIKLUS AMÍG prim_e = 1 ÉS j < x
+        HA x MOD j = 0 AKKOR
+          prim_e := 0
+        HA_VÉGE
+        j := j + 1
+      CIKLUS_VÉGE
+      db := db + prim_e
+      i := i + 1
+    CIKLUS_VÉGE
+    KI: db
+  PROGRAM_VÉGE
+  

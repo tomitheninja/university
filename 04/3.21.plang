@@ -1,0 +1,19 @@
+** Egy tetsz?leges szövegr?l add meg, hány kis "a" bet? van benne.
+PROGRAM p
+    VÁLTOZÓK:
+        s: SZÖVEG,
+        db, i: EGÉSZ
+    
+    BE: s
+    db := 0
+    i := 0
+    CIKLUS AMÍG i < |s|
+        HA s[i] = 'a' AKKOR
+            db := db + 1
+        HA_VÉGE
+        
+        i := i + 1
+    CIKLUS_VÉGE
+
+    KI: db
+PROGRAM_VÉGE

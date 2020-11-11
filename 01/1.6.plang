@@ -1,0 +1,8 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    a, b, c: EGÉSZ
+ 
+  BE: a, b, c
+  KI: a /= 0 ÉS a + b > c ÉS a + c > b ÉS b + c > a
+PROGRAM_VEGE
+
