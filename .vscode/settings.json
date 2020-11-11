@@ -1,3 +1,8 @@
 {
-    "files.encoding": "iso88591"
+    "files.encoding": "iso88591",
+    "files.associations": {
+        "*.tcc": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp"
+    }
 }
