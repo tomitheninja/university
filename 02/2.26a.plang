@@ -6,7 +6,7 @@ PROGRAM p
   i := 2
   CIKLUS AMÍG n > 1
     HA n MOD i = 0 AKKOR
-      KI: i
+      KI: i, SV
       n := KEREK (VALÓS n / VALÓS i)
     HA_VEGE
     HA n MOD i /= 0 AKKOR
