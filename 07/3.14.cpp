@@ -3,7 +3,7 @@
 
 using namespace std;
 
-double dot(vector<double> &const v1, vector<double> &const v2)
+double dot(vector<double> &v1, vector<double> &v2)
 {
     double sum = 0;
     for (int i = 0; i < v1.size(); i++)

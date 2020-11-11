@@ -18,5 +18,12 @@ int main()
 {
     int x;
     cin >> x;
-    cout << is_prime(x) << endl;
+    if (is_prime(x))
+    {
+        cout << "igaz" << endl;
+    }
+    else
+    {
+        cout << "hamis" << endl;
+    }
 }

@@ -24,8 +24,9 @@ int main()
         if (is_prime(i))
         {
             many_found++;
-            cout << i << endl;
+            cout << i << ' ';
         }
     }
+    cout << endl;
     return 0;
 }
