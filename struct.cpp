@@ -1,0 +1,89 @@
+#include <iostream> // input and output
+#include <fstream>  // files
+#include <vector>   // vector = c++'s better array
+#include <string>   // vector like c++ strings
+#include <cmath>    // math stuff like sqrt()
+#include <cstdlib>  // rand
+#include <ctime>    // time() to seed rand()
+
+using namespace std;
+
+struct Date
+{
+    int year;
+    int month;
+    int day;
+};
+
+// Print the structure to a file in this format:
+// {year}.{month}.{day}
+ostream &operator<<(ostream &f, const Date &d)
+{
+    f << d.year << '.' << d.month << '.' << d.day;
+    return f;
+}
+
+// Read the Date from a file
+// which has the following format:
+// {year}.{month}.{day}
+ifstream &operator>>(ifstream &f, Date &d)
+{
+    char sep; // we will read the dots or any seperator character into this variable
+
+    // if you want to read any number spaces instead,
+    // you should read into `ws` instead.
+    f >> d.year >> sep >> d.month >> sep >> d.day;
+    return f;
+}
+
+bool operator<(const Date &a, const Date &b)
+{
+    if (a.year < b.year)
+        return true;
+    if (a.year > b.year)
+        return false;
+    // at this point a.year == b.year
+    if (a.month < b.month)
+        return true;
+    if (a.month > b.month)
+        return false;
+    // at this point a.year == b.year && a.month == b.month
+    return a.day < b.day;
+}
+
+bool operator>(const Date &a, const Date &b)
+{
+    if (a.year > b.year)
+        return true;
+    if (a.year < b.year)
+        return false;
+    // at this point a.year == b.year
+    if (a.month > b.month)
+        return true;
+    if (a.month < b.month)
+        return false;
+    // at this point a.year == b.year && a.month == b.month
+    return a.day > b.day;
+}
+
+bool operator==(const Date &a, const Date &b)
+{
+    return a.year == b.year && a.month == b.month && a.day == b.day;
+}
+
+int main()
+{
+    // EXAMPLE:
+    Date d1;
+    d1.year = 2020;
+    d1.month = 11;
+    d1.day = 24;
+
+    ifstream f("date.txt");
+    Date d2;
+    f >> d2; // reading from file to Date is implemented on line 29
+    f.close();
+
+    // The parantheses are often needed if the expression is surrounded by << or >>.
+    cout << (d1 < d2) << endl;
+}
