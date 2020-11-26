@@ -7,7 +7,7 @@
 use google or duckduckgo. use them more than often. Even more often than that.
 
 You are not the first to solve these problems.
-There are already tens or hundreds of solutions out there.
+There are already tens or hundreds of well documented solutions out there.
 You just need to find them.
 
 Sadly only cppreference.com is allowed during the exam
@@ -22,8 +22,9 @@ Trust me you can't learn programming by memorizing the code.
 The ones who tried hardest to get good marks on these tests are the ones who had trouble when writing their own code later on.
 
 You are not programming to write code anyway. You are programming to solve problems using the computer.
+Code is just a tool for that. A key without the car is pretty useless.
 
-And we are only using computers, because they are very good at solving some problems.
+We are only using computers, because they are very good at solving some problems.
 
 You can calculate [bitcoin hashes on paper](http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html),
 it just happens that a computer can do it a trillion times faster.
@@ -58,7 +59,7 @@ If your code produces random results or is segfault-ing, then you might using "g
 
 Many of these bugs can be caught with a static analyzer like [c++ check](http://cppcheck.sourceforge.net/#download) which have a graphical interface.
 
-Just press new project open a folder and it will show **POTENTIONAL** bugs.
+Just press new project, open a folder and it will show **POTENTIONAL** bugs.
 
 -> It might also provide additional suggestions
 
@@ -70,6 +71,6 @@ The development process is not linear. It has up's and down's.
 
 Make full backups via ctrl+c or git or comment out your old code.
 
-But don't delete any code until you solved the problem.
+But don't delete any code **until you solved the problem**.
 
 Who knowns, you might need it.
