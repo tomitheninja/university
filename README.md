@@ -38,7 +38,6 @@ contribution in code and feature requests are also welcomed
 
 TODO:
 
-* ask the teacher if devdocs.io can be used?
 * algorithms on struct vectors
 * algorithms on strings
 * file management
