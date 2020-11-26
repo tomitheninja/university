@@ -5,7 +5,7 @@
 ! Always preffer information provided by your teacher rather than something written down here.
 ```
 
-## Help needed
+## Help wanted
 
 I wrote more than half of this repository while being half asleep.
 
