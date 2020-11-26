@@ -13,6 +13,8 @@ That means it is probably full of issues.
 
 Fill free report them at [github issues](https://github.com/tomitheninja/bevprog/issues) or on [discord](http://discordapp.com/users/335860149749153802).
 
+contribution in code and feature requests are also welcomed
+
 ## external content
 
 * [Algorithms visualized](http://anim.ide.sk/elemi_algoritmusok.php)
