@@ -36,7 +36,7 @@ Fill free report them at [github issues](https://github.com/tomitheninja/bevprog
 
 TODO:
 
-* ask the teacher if devdocs.io is allowed?
+* ask the teacher if devdocs.io can be used?
 * algorithms on struct vectors
 * algorithms on strings
 * file management
