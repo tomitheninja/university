@@ -8,13 +8,13 @@ The basic idea:
 
 * ...
 
-* Until there are nothing left to sort (only 1 item can't be unsorted)
+* Until there is nothing left to sort (only 1 item can't be unsorted)
 
-## undocumented verion
+* at this point the array is sorted
 
-Sadly sorting algorithms are exceptions.
+## Short version
 
-It's unlikely that you will ever write your own implementation IRL, but
+It's unlikely that you will ever write your own sorting algorithm IRL, but
 you are not allowed to use pre-written code (like `std::sort(arr)`) during the exam
 
 So you need to memorize the following snippet:
@@ -46,8 +46,8 @@ void sort(vector<Person> &people)
     // by default every element is unordered
     for (int i = 0; i < people.size(); i++)
     {
-        // in every iteration we place one item into it's final position
-        // (which is at the end of array now)
+        // in every iteration we place one item into its final position
+        // (which is at the end of the array now)
         // hence decreasing the unordered part by one
         // and increasing the ordered part by one item
 
