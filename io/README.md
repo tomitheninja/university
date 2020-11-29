@@ -193,4 +193,8 @@ else
 }
 ```
 
+### Reading until the end of the file
+
+Usually the data doesn't contains 
+
 
