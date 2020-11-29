@@ -20,11 +20,15 @@ Something that doesn't contain any whitespace (I am sure there is a better synon
   * 1 and 1.123 is a word (and a number)
   * apple and no_space_in_me is a word (strings without space inside them)
   
+You can read words using the `>>` operator.
+  
 #### line
 
 array of characters until the terminating '\n' (newline) character.
 
 Might contain no or multiple words and whitespaces (just like lines in word)
+
+You can read lines using `getline(source, to_str)`.
 
 ## Input algorithms
 
@@ -34,7 +38,7 @@ Make sure you included the required headers (iostream for console, fstream for f
 
 ### Reading one character
 
-Can be done with the `>>` operator.
+You can read into a variable that has `char` type using the `>>` operator. 
 
 Will automatically **skip leading whitespaces**.
 
@@ -54,6 +58,8 @@ input (inside the ""-s) | value of c | location of the virtual cursor | explanat
 
 ### Reading numbers
 
+You can read into a variable that has `int` or `float` or any other numeric type using the `>>` operator. 
+
 ```c++
 // read integer from cin
 int n;
@@ -70,6 +76,5 @@ type of n | input | value of n | location of the virtual cursor | explanation
 --- | --- | --- | --- | ---
 int | "123" | 123 | "123▶️" | -
 float | "  123.456  " | 123.456 | "  123.456▶️  " | Will skip whitespace **BEFORE** the number
-int | " 123.456 " | 123 | "  123▶️.456  " | int can't store fractions (.456), so it will stop if it finds a dot
-any | "invalid" | it's previous value | ☠ | c++ can't convert "not_num" into a numeric value. This will crash the input stream which will only provide zero bytes from now on.
-
+int | " 123.456 " | 123 | "  123▶️.456  " | int can't store fractions (.456), so it will stop if it finds a dot character.
+any | "invalid" | it's previous value | ☠ | c++ can't convert the "invalid" string into a numeric value. This will crash the input stream which will only provide zero bytes from now on.
