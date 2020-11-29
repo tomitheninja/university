@@ -42,6 +42,21 @@ Your chances to find a bug without using the debugger during the exam is very lo
 
 But no worries, via the debugger you can run your program in small steps to locate the bug.
 
+**extra**
+
+If you want to print out a debugging message to the console like `RUNS UNTIL HERE` or `x = `
+
+use the _console error stream_.
+
+Because1: This way you can find your debugging statements easily.
+
+Because2: When an error checking robot or a linux user runs your program he can easily hide these messages.
+
+```diff
+- cout << "HERE" << endl;
++ cerr << "HERE" << endl;
+```
+
 #### 2.2. Try an other IDE / editor
 
 [qt editor for open source](https://www.qt.io/download-open-source) and [vscode](https://code.visualstudio.com/docs/languages/cpp) has good support for c++, but they are harder to set up than code blocks.
