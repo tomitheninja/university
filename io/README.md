@@ -71,5 +71,5 @@ type of n | input | value of n | location of the virtual cursor | explanation
 int | "123" | 123 | "123▶️" | -
 float | "  123.456  " | 123.456 | "  123.456▶️  " | Will skip whitespace **BEFORE** the number
 int | " 123.456 " | 123 | "  123▶️.456  " | int can't store fractions (.456), so it will stop if it finds a dot
-any | "not_num" | it's previous value | ☠ | c++ can't convert "not_num" into a numeric value. This will crash the input stream which will only provide zero bytes from now.
+any | "invalid" | it's previous value | ☠ | c++ can't convert "not_num" into a numeric value. This will crash the input stream which will only provide zero bytes from now on.
 
