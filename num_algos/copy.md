@@ -1,8 +1,8 @@
 # Let's create a copy of our vector
 
-Please take a look on both solutions and try to understand how returning and outputputing through a parameter compares.
+Please take a look on both solutions and try to understand how returning and outputing through a parameter compares.
 
-I am quite sure you will face this problem on the exam
+You will almost certainly have to use both on the exam if you have to complete some half-done code which is a common task.
 
 ```c++
 // returns a copy of v
@@ -25,9 +25,23 @@ vector<int> copy(const vector<int> &v)
 }
 ```
 
-## Same but with v2 as param
+#### Usage:
+```c++
+
+int result = returns_by_value(param1);
+
+```
+
+## Same but outputing the result through a reference
+
+In some cases (like when you want to return multiple values), you can't use returning by value.
+
+In this case, you have to create a (reference) parameter to each value you want to return.
+
 ```c++
 // copies v1 into v2
+// v2 is the output param
+// so it must be a non-constant reference
 void copy(const vector<int> &v1, vector<int> &v2)
 {
   // note: v2.size() == 0, here
@@ -45,15 +59,9 @@ void copy(const vector<int> &v1, vector<int> &v2)
 }
 ```
 
-### Hacky solution
-
-If you still remember pass by value makes a copy of the array.
-
-But the teacher might not be happy about this solution
+#### Usage
 
 ```c++
-vector<int> copy(vector<int> v) // <- pass by value. Because we do want a copy of it
-{
-  return v;
-}
+int result;
+outputs_through_parameter(param1, result);
 ```
