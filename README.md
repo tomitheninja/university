@@ -2,18 +2,18 @@
 
 ```fix
 ! Some informations in this repository might be incorrect.
-! Always preffer information provided by your teacher rather than something written down here.
+! Always preffer information provided by your teacher.
 ```
 
 ## Help wanted
 
 I wrote more than half of this repository while being half asleep.
 
-That means it is probably full of issues.
+That means there are probably multiple issues with it.
 
-Fill free report them at [github issues](https://github.com/tomitheninja/bevprog/issues) or on [discord](http://discordapp.com/users/335860149749153802).
+Fill free report them via [github issues](https://github.com/tomitheninja/bevprog/issues) or on [discord](http://discordapp.com/users/335860149749153802).
 
-contribution in code and feature requests are also welcomed
+Contributions in code and feature requests are welcomed.
 
 ## external content
 
@@ -42,4 +42,4 @@ TODO:
 * algorithms on strings
 * file management
 * learn graphics & create a tutorial for it (maybe I won't have time for that)
-* pass the test
+* pass the exam
