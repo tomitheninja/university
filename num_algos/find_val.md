@@ -8,12 +8,14 @@ When using primitives (like numbers), we already have access to all their proper
 
 In this case the algorithm can be replaced with this following:
 
+```c++
 if (this item is in the vector) // any_equals(v, this item)
 {
    // then do something with it
 } else {
   // print an error or use a default value or idk
 }
+```
 
 If you need to implement the find value algorithm for primitives (99.9% you are not), here it is:
 
