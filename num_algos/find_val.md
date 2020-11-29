@@ -2,9 +2,20 @@
 
 Implementing this algorithm on **numbers** isn't that common
 
-You might misinterpreted the task and need to use an other algorithm.
+You might have misinterpreted the task and need to use another algorithm.
 
-But if you need it, here it is:
+When using primitives (like numbers), we already have access to all their properties.
+
+In this case the algorithm can be replaced with this following:
+
+if (this item is in the vector) // any_equals(v, this item)
+{
+   // then do something with it
+} else {
+  // print an error or use a default value or idk
+}
+
+If you need to implement the find value algorithm for primitives (99.9% you are not), here it is:
 
 ### hard coded condition
 ```c++
