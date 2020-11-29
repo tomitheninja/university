@@ -8,9 +8,9 @@
 * cstdlib (rand() and srand())
 * ctime (time to seed rand() with)
 
-C++ has terrible error messages so it's not trivial to notice that if you didn't include something the language needs.
+C++ has terrible error messages so it's not trivial to notice when you didn't include something the language needs.
 
-So I recommend including all of these when you create a new file. Then remove the unused ones when you are done with the file.
+I recommend including all of these when you create a new file. Then remove the unused ones when you are done working with it.
 
 ```c++
 #include <iostream>
