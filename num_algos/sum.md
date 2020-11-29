@@ -1,27 +1,41 @@
 # sum all numbers in a vector
 
-Imagine you are building a tower.
+Summing all items in an array is a fairly abstract problem.
 
-* you start with a tower that has 0 height
-* then you put the first brick on it
-* then the second
+So instead let's measure the height of a very-very tall tower.
+
+The problem is that our only tool is a simple ruler which can only measure one brick at a given type. (yes I am talking about you CPU)
+
+Can we still measure the height of the tower?
+
+Of course we can!
+
+We will do it brick-by-brick then!
+
+Here is our algorithm:
+
+* The height of zero bricks is zero (tower_height = 0) 
+* measure the first's bricks height and add this value to the total height (tower_height += first brick's height)
+* then do the same with the next brick (tower_height += second brick's height)
 * ...
-* then the last
-* **after the last one**:
-* the height of the tower = sum of the height of the bricks
+* do the same with the last one (tower_height += last brick's height)
+* **at this point**:
+* sum of all the measured bricks height = the tower's height
+
+We successfully measured the height of a very complex structure (the tower = the array)
+
+by using only very simple operations (measuring on brick's height, summing two numbers).
 
 ```c++
 int sum(const vector<int> &v)
 {
     int sum_so_far = 0;
-    for (size_t i = 0; i < v.size(); i++)
+    for (size_t i = 0; i < v.size(); i++) // for each available index in v
     {
-        sum_so_far += v[i]; // add it's value to the sum
+        sum_so_far += v[i]; // add the item's value to the sum
     }
     // at this point all the bricks are measured
-    // (the for loop had the condition: while I saw as many (i) item as there are (v.size()))
-    // so the tower contains all the bricks
-    // so it's height (sum_so_far) = sum of the brick's heights (expected result)
+    // so the sum of the height of the bricks (sum_so_far) = the tower's height
     return sum_so_far;
 }
 
