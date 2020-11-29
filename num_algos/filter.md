@@ -9,15 +9,15 @@ throwing out the bad bricks = keeping the good bricks
 
 ### Filter out the good bricks
 
-It's just a copy algorithm with an extra condition.
+hint: just a copy algorithm with an extra condition.
 
 * check every brick (the for loop)
 * if we find a good brick (the if)
-  * move it to the result set (push) // it's more like copy, because we don't change the original set
+  * move it to the result set (push) // it's more like a copy because we don't change the original set
 * take the new set as the result (return)
 
 ```c++
-void filter(const vector<int> &v)
+vector<int> filter(const vector<int> &v)
 {
     vector<int> result;
     for (size_t i = 0; i < v.size(); i++)
