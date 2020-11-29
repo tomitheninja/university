@@ -18,12 +18,13 @@ Contributions in code and feature requests are welcomed.
 ## external content
 
 * [Algorithms visualized](http://anim.ide.sk/elemi_algoritmusok.php)
-* [less fun practicing tasks](https://mester.inf.elte.hu)
+* official [c++ documentation](https://devdocs.io), but with dark mode and a search button. You need to enable c++ in the settings first
+* [android](https://play.google.com/store/apps/details?id=com.sololearn) [ios](https://apps.apple.com/us/app/sololearn-learn-to-code/id1210079064) [web](https://www.sololearn.com/) Learn c++ features easily here (sololearn)
 * pannon uni's c++ book
   * [hungarian](http://moodle.autolab.uni-pannon.hu/Mecha_tananyag/c++programozas/)
   * [english](http://moodle.autolab.uni-pannon.hu/Mecha_tananyag/c++programozas_angol/)
 * [syntax cheatsheet](https://web.pa.msu.edu/people/duxbury/courses/phy480/Cpp_refcard.pdf)
-* [c++ documentation](https://devdocs.io) with dark mode and a search button. You need to enable c++ in the settings first
+* [less fun practicing tasks](https://mester.inf.elte.hu)
 
 ## internal content
 
@@ -35,11 +36,11 @@ Contributions in code and feature requests are welcomed.
 * [struct definitions](./struct.cpp) (date with file stream and comparision operator overloading)
 * practicing tasks
   * [fun ones](./fun_practising_tasks.md) (In hungarian)
+* [file management](./files)
 
 TODO:
 
 * algorithms on struct vectors
 * algorithms on strings
-* file management
 * learn graphics & create a tutorial for it (maybe I won't have time for that)
 * pass the exam
