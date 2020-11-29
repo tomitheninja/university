@@ -7,7 +7,7 @@
 use google or duckduckgo. use them more than often. Even more often than that.
 
 You are not the first to solve these problems.
-There are already tens or hundreds of well documented solutions out there.
+There are already tens or hundreds of well-documented solutions out there.
 You just need to find them.
 
 Sadly only cppreference.com is allowed during the exam
@@ -44,19 +44,19 @@ But no worries, via the debugger you can run your program in small steps to loca
 
 #### 2.2. Try an other IDE / editor
 
-[qt editor for open source](https://www.qt.io/download-open-source) and [vscode](https://code.visualstudio.com/docs/languages/cpp) has good support for c++, but they are harder to set up than codeblocks.
+[qt editor for open source](https://www.qt.io/download-open-source) and [vscode](https://code.visualstudio.com/docs/languages/cpp) has good support for c++, but they are harder to set up than code blocks.
 
 But you only need to configure them once, so it might still worth it for you.
 
 #### 2.3. Download a code analyzer
 
-If your code produces random results or is crashing with "segmentation faults", then you are probably using "garbage memory" (an other program's RAM).
+If your code produces random results or is crashing with "segmentation fault" then you are probably using "garbage memory" (RAM not assigned  for your program to use)
 
-This can happen when using an index outside an array's range or when using a reference to a variable that doesn't live anymore (was declared inside a function for example)
+This can happen when you are using an index outside an array's range or when using a reference to a variable that doesn't live/exists anymore (for example when it was declared inside a function that we returned from)
 
-Many of these bugs can be caught with a static analyzer like [c++ check](http://cppcheck.sourceforge.net/#download) which even have a nice graphical interface.
+Many of these bugs can be caught with a static analyzer like [c++ check](http://cppcheck.sourceforge.net/#download) which even has a graphical interface.
 
-Just press new project, open a folder and it will show **POTENTIONAL** bugs.
+Just press new project, open a folder and it will show **POTENTIAL** bugs.
 
 -> It might also provide additional suggestions
 
@@ -64,10 +64,10 @@ but I think if your code runs fine, the exam is not the time to try things out.
 
 ### 3. Create checkpoints
 
-The development process is not linear. It has up's and down's.
+The development process is not linear. It has ups and downs.
 
 Make full backups via ctrl+c or git or comment out your old code.
 
 But don't delete code **until you solved the problem**.
 
-Who knowns, you might need it later.
+Who knows, you might need it later.
