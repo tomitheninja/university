@@ -1,8 +1,8 @@
-# Count how many items in the vector has a property
+# Count how many items in the vector have a searched property
 
-Image that we want to build a house and we have a lot of bricks, but some are too small to be used for the task.
+Imagine that we want to build a house and we have a lot of bricks, but some are too small to be used for the task.
 
-let's count how many good bricks we have. Let's say a brick is good its size is > 5
+let's count how many good bricks we have. Let's say a brick is good if its size is > 5
 
 ```diff
 - you don't want to count all the bricks without any condition
@@ -10,9 +10,9 @@ let's count how many good bricks we have. Let's say a brick is good its size is 
 - because that will always equal v.size()
 ```
 
-also all the bricks are in a nice linear path (in an array), so we don't have to worry about counting one multiple times.
+also, all the bricks are in a nice linear path (in an array), so we don't have to worry about counting one multiple times (like we often do when counting the number of people in a group.
 
-### TASK: so let's count how many bricks are larger than 5
+### TASK: Count how many bricks are larger than 5
 
 * close all your fingers (count = 0)
 * and start measuring all the bricks (for loop)
@@ -45,9 +45,9 @@ return 0;
 
 ### TASK: Why 5? Why not 4? or 10!
 
-we hardcoded 5 as the minimum size. What if an other client say's 10?
+we hardcoded 5 as the minimum size. What if another client says 10?
 
-We don't want to make a new function for that, let's make out code a little bit more generic 
+We don't want to make a new function for every possible situation, so let's make some changes to the function so it will work with any min_size.
 
 ```c++
 int count_many(const vector<int> &v, int min_size)
@@ -69,6 +69,6 @@ v.push_back(12);
 // ...
 v.push_back(1);
 
-int count_good = count_many(v, 10);
+int count_many_good = count_many(v, 10);
 return 0;
 ```
