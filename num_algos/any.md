@@ -1,4 +1,4 @@
-# Is there any item with this property?
+# Do we have any item with the searched property?
 
 It's almost like the find algorithm, except
 
@@ -6,12 +6,12 @@ It's almost like the find algorithm, except
 * the function returns _true_
 * and _false_ if not found
 
-Because the answer to the "is there any" question is **yes/no** and not **"this one"**
+that's because the answer to the "is there any" question is **yes** or **no** and instead of **"this one"**
 
 ### Task: Do we have any good bricks? 
 
 ```c++
-// Check if any/some of the items in the vector matches a criteria
+// Check if any of the items in the vector matches a criteria
 bool any(const vector<int> &v)
 {
     for (size_t i = 0; i < v.size(); ++i)
@@ -19,6 +19,8 @@ bool any(const vector<int> &v)
         if (v[i] >= 5)
         {
             return true; // found one
+            // The computer will exit from the function
+            // when it meets a return instruction.
         }
     }
     // we checked all items, but not found any :(
@@ -29,7 +31,7 @@ bool any(const vector<int> &v)
 ### Task: same, but with a parameter
 
 ```c++
-// Check if any/some of the items in the vector matches a criteria
+// Check if any of the items in the vector matches a criteria
 bool any(const vector<int> &v, int min_size)
 {
     for (size_t i = 0; i < v.size(); ++i)
