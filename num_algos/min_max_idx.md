@@ -11,7 +11,7 @@ We are looking for the index of the smallest item in the vector
 
 Almost identical to a regular min algorithm, but stores the index of an element not it's value.
 
-But the value can be accessed through it's index. `min_val= v[min_val_idx]`
+That's not a problem because any value can be accessed through it's index. `val= v[idx]`
 
 ```c++
 int min_idx(const vector<int> &v)
