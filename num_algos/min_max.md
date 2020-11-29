@@ -2,7 +2,7 @@
 
 Let's assume we have at least one brick. (There is no largest element in the empty set)
 
-Let's put all our bricks in a linear path (a vector).
+Let's put all our bricks in a linear path (in a vector).
 
 Pick up the first and compare it to the second.
 
@@ -10,13 +10,13 @@ Keep the larger (drop the one in our hand if the other is larger and pick that u
 
 compare the larger to the third.
 
-Again keep the larger and compare it with the next.
+Again keep the larger and compare it to the next one.
 
 ...
 
 After comparing the brick in our hand with the last one,
 
-keep the larger. That's a largest of all the bricks.
+keep the larger. That's the largest of all the bricks.
 
 ```c++
 // Find the largest number in the vector
