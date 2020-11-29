@@ -36,7 +36,7 @@ Contributions in code and feature requests are welcomed.
 * [struct definitions](./struct.cpp) (date with file stream and comparision operator overloading)
 * practicing tasks
   * [fun ones](./fun_practising_tasks.md) (In hungarian)
-* [file management](./files)
+* [input / output algorithms](./io)
 
 TODO:
 
