@@ -195,6 +195,111 @@ else
 
 ### Reading until the end of the file
 
-Usually the data doesn't contains 
+Task: Read and parse a file into a float vector
 
+Just don't forget the last newline problem and you should be fine
 
+input.txt:
+```csv
+1.2
+6
+4.2
+
+```
+
+```c++
+vector<float> v;
+ifstream f("data.txt");
+  
+// dont enter the loop
+// if the file only contains whitespace
+f >> ws;
+
+while (f.good())
+{
+    float x;
+    f >> x;
+    v.push_back(x);
+
+    f >> ws;
+    // Don't forget to read the trailing whitespace
+    // Because if the last line ends with a newline
+    // then c++ will try to read an empty line
+    // and we don't want to do that'
+}
+```
+
+#### Alternative method
+
+todo: ask the teacher why is the other method prefered
+
+```c++
+vector<float> v;
+ifstream f("input.txt");
+float x;
+while (f >> x)
+{
+    v.push_back(x);
+}
+```
+
+### Reading into a structure
+
+We can teach c++ how to read into our own data type (the structure).
+
+#### Things to notice and remember
+
+* If your v vector has zero items after the reading always check if you opened to correct path.
+
+```c++
+// insert before while(f.good())
+if (!f.is_open()) {
+    cerr << "File not found" << endl;
+}
+```
+
+* Don't forget to return a **reference** to the stream you got as a parameter. Or else you will get an useless error message.
+
+* Use `istream` instead of `ifstream` if you want to read this structure from both console and file. But you will lose access to a lot of methods like f.good() inside the operator>> function. But you will probably not need it and if you dont need it, dont use it.
+
+* Still don't forget to return a reference of the &ifstream
+
+* Starting from the second input, if you forgot to read into `ws` and start reading the line with `getline` then person.name will include the newline character.
+
+`"\ntomi" != "tomi"`, but it's very hard to find this bug without a debugger
+
+The code:
+
+```c++
+struct Person
+{
+    string name;
+    int age;
+};
+
+// Parses the following line into a Person object
+// Just George;90
+// -> Person { name = "Just George", age = 90 };
+ifstream &operator>>(ifstream &f, Person &p)
+{
+    getline(f, p.name, ';'); // read everything until the first semicolon
+    f >> p.age;              // read a number
+    return f;
+}
+
+int main()
+{
+    vector<Person> v;
+    ifstream f("input.txt");
+    f >> ws;
+    while (f.good())
+    {
+        Person p;
+        f >> p;
+        v.push_back(p);
+
+        f >> ws;
+    }
+    return 0;
+}
+```
