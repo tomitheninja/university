@@ -5,7 +5,7 @@
 ! Always preffer information provided by your teacher.
 ```
 
-## DO NOT COPY THE CODE DURING THE EXAM FROM HERE
+## DO NOT COPY THE CODE FROM HERE DURING THE EXAM
 
 Learn the algorithms and the syntax before the exam.
 
