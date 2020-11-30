@@ -125,11 +125,11 @@ input | value of s | location of the virtual cursor | explanation
 
 Sometimes you don't need to store the data.
 
-In this case just delete these lines:
+In this case, just delete these lines:
 
 * Definition of the vector `vector<T> v;`
 * pushing to the vector `v.push_back(x);`
-  * You can write your code here, at it's location
+  * You can write your code here, at its location
 
 ### Reading n floats from the console
 
@@ -143,7 +143,7 @@ vector<int> v; // I recommend ALWAYS using C++ vectors over C arrays
 for (size_t i = 0; i < n; i++)
 {
   // Currently v can't store any more items (i > v.size() - 1 <- the last valid index).
-  // so we can't just write into it's next index (=i)
+  // so we can't just write into its next index (=i)
   // because we haven't reserved that memory yet.
   // So we will create a variable first and read into that.
   float x;
@@ -161,10 +161,10 @@ vector<float> v;
 cin >> v;
 ```
 
-It might sound logical to read an element from the console into an vector,
+It might sound logical to read an element from the console into a vector,
 but c++ doesn't allow this.
 
-Instead we first need to read into a variable and then we can push the value of that value to the end of the vector.
+Instead, we first need to read into a variable and then we can push the value of that value to the end of the vector.
 
 
 ### Reading n float from a file
@@ -231,7 +231,7 @@ while (f.good())
 
 #### Alternative method
 
-todo: ask the teacher why is the other method prefered
+todo: ask the teacher why is the other method preferred
 
 ```c++
 vector<float> v;
@@ -258,9 +258,9 @@ if (!f.is_open()) {
 }
 ```
 
-* Don't forget to return a **reference** to the stream you got as a parameter. Or else you will get an useless error message.
+* Don't forget to return a **reference** to the stream you got as a parameter. Or else you will get a useless error message.
 
-* Use `istream` instead of `ifstream` if you want to read this structure from both console and file. But you will lose access to a lot of methods like f.good() inside the operator>> function. But you will probably not need it and if you dont need it, dont use it.
+* Use `istream` instead of `ifstream` if you want to read this structure from both console and file. But you will lose access to a lot of methods like f.good() inside the operator>> function. But you will probably not need it and if you don't need it, don't use it.
 
 * Still don't forget to return a reference of the &ifstream
 
@@ -298,7 +298,7 @@ int main()
         f >> p;
         v.push_back(p);
 
-        f >> ws;
+        f >> ws; // Don't forget this
     }
     return 0;
 }
