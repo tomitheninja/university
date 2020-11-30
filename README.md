@@ -9,8 +9,6 @@
 
 Learn the algorithms and the syntax before the exam.
 
-Thank you for not causing problems for me.
-
 ## Help wanted
 
 I wrote more than half of this repository while being half asleep.
