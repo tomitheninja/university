@@ -28,6 +28,7 @@ Contributions in code and feature requests are welcomed.
   * [hungarian](http://moodle.autolab.uni-pannon.hu/Mecha_tananyag/c++programozas/)
   * [english](http://moodle.autolab.uni-pannon.hu/Mecha_tananyag/c++programozas_angol/)
 * [syntax cheatsheet](https://web.pa.msu.edu/people/duxbury/courses/phy480/Cpp_refcard.pdf)
+* [fun practicing tasks](https://adventofcode.com/2020) adventofcode
 * [less fun practicing tasks](https://mester.inf.elte.hu)
 
 ## internal content
