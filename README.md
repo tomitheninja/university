@@ -5,9 +5,13 @@
 ! Always preffer information provided by your teacher.
 ```
 
-## DO NOT COPY THE CODE FROM HERE DURING THE EXAM
+## Exam rules
 
-Learn the algorithms and the syntax before the exam.
+You can browse https://en.cppreference.com/w/ during the exam. I highly recommend using https://devdocs.io/cpp instead, as it is generated from cppreference.com, but has a better search engine and style.
+
+You should not use this repository, but you can use code from your previous homeworks.
+
+You can use the full c++11 language, including all built in types and functions. I am planning to create a tutorial for them soon.
 
 ## Help wanted
 
@@ -42,10 +46,10 @@ Contributions in code and feature requests are welcomed.
 * practicing tasks
   * [fun ones](./fun_practising_tasks.md) (In hungarian)
 * [input / output algorithms](./io)
+* [string algorithms](./string_algos)
 
 TODO:
 
 * algorithms on struct vectors
-* algorithms on strings
 * learn graphics & create a tutorial for it (maybe I won't have time for that)
 * pass the exam
