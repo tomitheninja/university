@@ -22,6 +22,10 @@ I recommend including all of these when you create a new file. Then remove the u
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
+// helpers for algorithm:
+#include <iterator>
+#include <functional>
+#include <numeric>
 
 using namespace std;
 
