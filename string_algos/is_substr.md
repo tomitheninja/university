@@ -1,5 +1,7 @@
 # Is substring / contains / includes
 
+Works simillary to string.find [cplusplus.com](https://www.cplusplus.com/reference/string/string/find/), but returns a bool instead of the starting index of the match
+
 Let's check if s1 contains s2
 
 Imagine you have two rulers
@@ -13,6 +15,31 @@ If you checked all possible positions, but u didn't found any
 That means the second ruler can't be a part of the first one
 
 return false
+
+## Clean version
+
+```c++
+bool is_substring(const string &s1, const string &s2)
+{
+    for (int i = 0; i <= s1.size() - s2.size(); i++)
+    {
+        bool found = true;
+        for (int j = 0; j < s2.size(); j++)
+        {
+            if (s1[i + j] != s2[j])
+            {
+                found = false;
+                break;
+            }
+        }
+        if (found)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+```
 
 ## Explained version
 
@@ -66,31 +93,6 @@ bool is_substring(const string &s1, const string &s2)
     // We couldn't find any
     // otherwise return true would have quit from this function
     // return false, because we didn't find it
-    return false;
-}
-```
-
-## Clean version
-
-```c++
-bool is_substring(const string &s1, const string &s2)
-{
-    for (int i = 0; i <= s1.size() - s2.size(); i++)
-    {
-        bool found = true;
-        for (int j = 0; j < s2.size(); j++)
-        {
-            if (s1[i + j] != s2[j])
-            {
-                found = false;
-                break;
-            }
-        }
-        if (found)
-        {
-            return true;
-        }
-    }
     return false;
 }
 ```
