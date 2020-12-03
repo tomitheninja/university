@@ -48,3 +48,35 @@ v.push(10);
 
 sum(v) == 55
 ```
+
+## One line solution
+
+Don't forget to include all header files
+
+```c++
+vector<int> v;
+for (int i = 1; i <= 10; i++)
+{
+    v.push_back(i);
+}
+// start with the 0 zero initialial value
+// sum all items between v.begin() and v.end() 
+int sum = accumulate(v.begin(), v.end(), 0);
+cout << sum << endl;
+return 0;
+```
+
+### Product
+
+```c++
+// we need a custom handler function
+int multi(int a, int b)
+{
+    return a * b;
+}
+
+// Pass that custom function as the 4th argument
+int pro = accumulate(v.begin(), v.end(), 1, multi);
+cout << pro << endl;
+return 0;
+```
