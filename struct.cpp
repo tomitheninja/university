@@ -23,16 +23,14 @@ ostream &operator<<(ostream &f, const Date &d)
     return f;
 }
 
-// Read the Date from a file
+// Read the Date from an input
 // which has the following format:
 // {year}.{month}.{day}
-ifstream &operator>>(ifstream &f, Date &d)
+istream &operator>>(istream &f, Date &d)
 {
-    char sep; // we will read the dots or any seperator character into this variable
+    char junk; // we will read the dots or any seperator character into this variable
 
-    // if you want to read any number spaces instead,
-    // you should read into `ws` instead.
-    f >> d.year >> sep >> d.month >> sep >> d.day;
+    f >> d.year >> junk >> d.month >> junk >> d.day;
     return f;
 }
 
@@ -42,12 +40,12 @@ bool operator<(const Date &a, const Date &b)
         return true;
     if (a.year > b.year)
         return false;
-    // at this point a.year == b.year
+    // at this point a.year must be = b.year
     if (a.month < b.month)
         return true;
     if (a.month > b.month)
         return false;
-    // at this point a.year == b.year && a.month == b.month
+    // at this point a.year must be == b.year && a.month must be == b.month
     return a.day < b.day;
 }
 
@@ -81,7 +79,7 @@ int main()
 
     ifstream f("date.txt");
     Date d2;
-    f >> d2; // reading from file to Date is implemented on line 29
+    f >> d2; // reading from input to Date is implemented on line 29
     f.close();
 
     // The parantheses are often needed if the expression is surrounded by << or >>.
