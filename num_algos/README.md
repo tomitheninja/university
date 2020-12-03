@@ -26,9 +26,9 @@ abs(expected result - got result) < eps
 * [bubble sort](./bubble_sort.md) buborék rendezés
 * [reverse](./reverse.md) tükrözés
 
-## One liners
+# One liners
 
-#### header files:
+### header files:
 
 ```c++
 #include <algorithm>
@@ -36,7 +36,7 @@ abs(expected result - got result) < eps
 #include <functional>
 #include <numeric>
 ```
-#### The vector
+### The vector
 
 ```
 vector<int> v;
@@ -45,14 +45,14 @@ v.push(43);
 // ...
 ```
 
-#### sum
+### sum
 
 ```c++
 // 0 is the initial value
 int sum = accumulate(v.begin(), v.end(), 0);
 ```
 
-#### product
+### product
 
 accumulate defaults to addition. We need to teach c++ how to do multiplication.
 
@@ -70,7 +70,7 @@ int pro = accumulate(v.begin(), v.end(), 1, multi)
 int pro = accumulate(v.begin(), v.end(), 1, [](int a, int b){return a * b;})
 ```
 
-#### Find value
+### Find value
 
 ```c++
 int find_this = -8;
@@ -86,7 +86,7 @@ else
 }
 ```
 
-#### Find index
+### Find index
 
 ```c++
 auto result = find_if(v.begin(), v.end(), [](int x) { return x == 4; });
@@ -102,7 +102,7 @@ else
 }
 ```
 
-#### filter (keep the good bricks)
+### filter (keep the good bricks)
 
 * back_inserter call's .push_back(x) on v2
 
@@ -112,7 +112,7 @@ copy_if(
         v.begin(), v.end(), std::back_inserter(v2), [](int x) { return x > 10; });
 ```
 
-#### max / largest
+### max / largest
 
 Warning: will segfault when called on an empty vector.
 
@@ -121,7 +121,7 @@ int max = *max_element(v.begin(), v.end());
 ```
 
 
-#### min / smallest
+### min / smallest
 
 Warning: will segfault when called on an empty vector.
 
@@ -129,13 +129,13 @@ Warning: will segfault when called on an empty vector.
 int max = *min_element(v.begin(), v.end());
 ```
 
-#### sort
+### sort
 
 ```c++
 sort(v.begin(), v.end());
 ```
 
-#### reverse
+### reverse
 
 ```c++
 reverse(v.begin(), v.end());
