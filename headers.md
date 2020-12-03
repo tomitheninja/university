@@ -22,4 +22,11 @@ I recommend including all of these when you create a new file. Then remove the u
 #include <cstdlib>
 #include <ctime>
 #include <algorithms>
+
+using namespace std;
+
+int main()
+{
+    return 0;
+}
 ```
