@@ -76,7 +76,7 @@ int pro = accumulate(v.begin(), v.end(), 1, [](int a, int b){return a * b;})
 int find_this = -8;
 auto result = find_if(v.begin(), v.end(), [&](int x) { return x == find_this; });
 
-if (result != v.end())
+if (result != v.end()) // Reaching v.end() means not found
 {
   cout << "Found " << *result << endl;
 }
