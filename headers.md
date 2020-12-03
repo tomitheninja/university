@@ -21,7 +21,7 @@ I recommend including all of these when you create a new file. Then remove the u
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
-#include <algorithms>
+#include <algorithm>
 
 using namespace std;
 
