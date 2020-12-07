@@ -97,7 +97,7 @@ So if you change the value inside the function, the outside value will **NOT** c
 _This is the most common case when passing **primitives** (like numbers, characters, ... <- cause they have fixed size)_
 
 ```fix
-! ifsteam doesn't support passing by value
+! isteam doesn't support passing by value
 
 But as I'll write down soon, struct's shouldn't be passed by value (in most cases).
 ```
@@ -118,7 +118,7 @@ _This is the only way (at least what I know) you can use to **change a value** o
 
 ## you don't need this -> Pass by const reference [can't change outside]
 
-Update: Performance doesn't matter on the exam. Feel free to use pass by value (copy) instead of this.
+**Update: Performance doesn't matter on the exam. Feel free to use pass by value (copy) instead of this.**
 
 ```int sum(const vector<int> &v) {}``` <-- **like pass by value but faster for complex types**
 
