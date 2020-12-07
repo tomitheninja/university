@@ -116,7 +116,9 @@ If you change the value inside the function, the outside value will ALSO change.
 
 _This is the only way (at least what I know) you can use to **change a value** outside the function_
 
-## Pass by const reference [can't change outside]
+## you don't need this -> Pass by const reference [can't change outside]
+
+Update: Performance doesn't matter on the exam. Feel free to use pass by value (copy) instead of this.
 
 ```int sum(const vector<int> &v) {}``` <-- **like pass by value but faster for complex types**
 
