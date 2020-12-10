@@ -28,7 +28,7 @@ abs(expected result - got result) < eps
 
 # One liners
 
-### header files:
+### required additional headers:
 
 ```c++
 #include <algorithm>
