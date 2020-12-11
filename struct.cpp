@@ -49,7 +49,7 @@ bool operator<(Date a, Date b)
     return a.day < b.day;
 }
 
-bool operator>(Date a, const Date b)
+bool operator>(Date a, Date b)
 {
     if (a.year > b.year)
         return true;
