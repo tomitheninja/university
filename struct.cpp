@@ -17,7 +17,7 @@ struct Date
 
 // Print the structure to a file in this format:
 // {year}.{month}.{day}
-ostream &operator<<(ostream &f, const Date &d)
+ostream &operator<<(ostream &f, Date d)
 {
     f << d.year << '.' << d.month << '.' << d.day;
     return f;
@@ -26,7 +26,7 @@ ostream &operator<<(ostream &f, const Date &d)
 // Read the Date from an input
 // which has the following format:
 // {year}.{month}.{day}
-istream &operator>>(istream &f, Date &d)
+istream &operator>>(istream &f, Date d)
 {
     char junk; // we will read the dots or any seperator character into this variable
 
@@ -34,7 +34,7 @@ istream &operator>>(istream &f, Date &d)
     return f;
 }
 
-bool operator<(const Date &a, const Date &b)
+bool operator<(Date a, Date b)
 {
     if (a.year < b.year)
         return true;
@@ -49,7 +49,7 @@ bool operator<(const Date &a, const Date &b)
     return a.day < b.day;
 }
 
-bool operator>(const Date &a, const Date &b)
+bool operator>(Date a, const Date b)
 {
     if (a.year > b.year)
         return true;
@@ -64,7 +64,7 @@ bool operator>(const Date &a, const Date &b)
     return a.day > b.day;
 }
 
-bool operator==(const Date &a, const Date &b)
+bool operator==(Date a, Date b)
 {
     return a.year == b.year && a.month == b.month && a.day == b.day;
 }
