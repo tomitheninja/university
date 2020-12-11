@@ -140,7 +140,7 @@ The first line contains the number n = number of lines of data
 int n; // Stores / will store how many lines of data we should read
 cin >> n;
 vector<int> v; // I recommend ALWAYS using C++ vectors over C arrays
-for (size_t i = 0; i < n; i++)
+for (int i = 0; i < n; i++)
 {
   // Currently v can't store any more items (i > v.size() - 1 <- the last valid index).
   // so we can't just write into its next index (=i)
@@ -177,7 +177,7 @@ if (f.good())
     int n;
     f >> n;
     vector<int> v;
-    for (size_t i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         float x;
         f >> x;

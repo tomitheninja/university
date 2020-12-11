@@ -20,7 +20,7 @@ Algorithm:
 // returns -1 if not found
 int find_index_of(vector<int> v, int item)
 {
-    for (size_t i = 0; i < v.size(); ++i)
+    for (int i = 0; i < v.size(); ++i)
     {
         if (v[i] == item) // "Are you Waldo?"
         {

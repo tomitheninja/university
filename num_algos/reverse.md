@@ -11,7 +11,7 @@ So we need to swap only half the vector
 #### code
 
 ```c++
-for (size_t i = 0; i < v.size() / 2; i++) {
+for (int i = 0; i < v.size() / 2; i++) {
     // start_idx := first index = 0
     // end_idx := last index = v.size() - 1
     // swap(v[start_idx + i], v[end_idx - i]);

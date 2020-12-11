@@ -23,7 +23,7 @@ also, all the bricks are in a nice linear path (in an array), so we don't have t
 int count_many(vector<int> v)
 {
     int count = 0;
-    for (size_t i = 0; i < v.size(); ++i)
+    for (int i = 0; i < v.size(); ++i)
     {
         if (v[i] > 5) // min_size is hard coded here to be 5
         {
@@ -53,7 +53,7 @@ We don't want to make a new function for every possible situation, so let's make
 int count_many(vector<int> v, int min_size)
 {
     int count = 0;
-    for (size_t i = 0; i < v.size(); ++i)
+    for (int i = 0; i < v.size(); ++i)
     {
         if (v[i] > min_size)
         {

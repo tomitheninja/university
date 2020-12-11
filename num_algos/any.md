@@ -14,7 +14,7 @@ that's because the answer to the "is there any" question is **yes** or **no** an
 // Check if any of the items in the vector matches a criteria
 bool any(vector<int> v)
 {
-    for (size_t i = 0; i < v.size(); ++i)
+    for (int i = 0; i < v.size(); ++i)
     {
         if (v[i] >= 5)
         {
@@ -34,7 +34,7 @@ bool any(vector<int> v)
 // Check if any of the items in the vector matches a criteria
 bool any(vector<int> v, int min_size)
 {
-    for (size_t i = 0; i < v.size(); ++i)
+    for (int i = 0; i < v.size(); ++i)
     {
         if (v[i] >= min_size)
         {

@@ -26,7 +26,7 @@ If you need to implement the find value algorithm for primitives (99.9% you are 
 // If not found returns false
 bool find_val(vector<int> v, int &result)
 {
-  for (size_t i = 0; i < v.size(); i++)
+  for (int i = 0; i < v.size(); i++)
   {
     if (v[i] > 5) {
       result = v[i];
@@ -56,7 +56,7 @@ if (find_val(v, result)) {
 // If not found returns false
 bool find_val(vector<int> v, int &result, int min)
 {
-  for (size_t i = 0; i < v.size(); i++)
+  for (int i = 0; i < v.size(); i++)
   {
     if (v[i] > min) {
       result = v[i];

@@ -23,7 +23,7 @@ keep the larger. That's the largest of all the bricks.
 int find_largest(vector<int> v)
 {
     int largest_so_far = v[0];
-    for (size_t i = 0; i < v.size(); i++)
+    for (int i = 0; i < v.size(); i++)
     {
         // (current: v[i]) vs (best: largest_so_far)
         if (v[i] > largest_so_far)

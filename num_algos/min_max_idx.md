@@ -17,7 +17,7 @@ That's not a problem because any value can be accessed through it's index. `val=
 int min_idx(vector<int> v)
 {
   int min_val_idx = 0;
-  for (size_t i = 0; i < v.size(); i++)
+  for (int i = 0; i < v.size(); i++)
   {
     if (v[i] < v[min_val_idx])
     {

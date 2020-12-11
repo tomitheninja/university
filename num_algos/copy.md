@@ -10,7 +10,7 @@ vector<int> copy(vector<int> v)
 {
   vector<int> v2;
   // note: v2.size() == 0, here
-  for (size_t i = 0; i < v1.size(); i++)
+  for (int i = 0; i < v1.size(); i++)
   {
     // so we can't use
     // v[i] = v2[i] here, because
@@ -45,7 +45,7 @@ In this case, you have to create a (reference) parameter to each value you want 
 void copy(vector<int> v1, vector<int> v2)
 {
   // note: v2.size() == 0, here
-  for (size_t i = 0; i < v1.size(); i++)
+  for (int i = 0; i < v1.size(); i++)
   {
     // so we can't use
     // v1[i] = v2[i] here, because

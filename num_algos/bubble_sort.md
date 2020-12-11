@@ -22,9 +22,9 @@ So you need to memorize the following snippet:
 ```c++
 void sort(vector<int> &v)
 {
-    for (size_t i = 0; i < v.size(); i++)
+    for (int i = 0; i < v.size(); i++)
     {
-        for (size_t j = 1; j < v.size() - i; j++)
+        for (int j = 1; j < v.size() - i; j++)
         {
             int tmp = v[j - 1];
             v[j - 1] = v[0];
