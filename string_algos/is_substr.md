@@ -16,7 +16,7 @@ That means the second ruler can't be a part of the first one
 
 return false
 
-## Clean version
+## I recommend string.find != string::nops instead ~~Clean version~~
 
 ```c++
 bool is_substring(const string &s1, const string &s2)
