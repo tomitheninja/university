@@ -20,7 +20,7 @@ also, all the bricks are in a nice linear path (in an array), so we don't have t
 * go to the next one until there are no more left (for loop)
 
 ```c++
-int count_many(const vector<int> &v)
+int count_many(vector<int> v)
 {
     int count = 0;
     for (size_t i = 0; i < v.size(); ++i)
@@ -50,7 +50,7 @@ we hardcoded 5 as the minimum size. What if another client says 10?
 We don't want to make a new function for every possible situation, so let's make some changes to the function so it will work with any min_size.
 
 ```c++
-int count_many(const vector<int> &v, int min_size)
+int count_many(vector<int> v, int min_size)
 {
     int count = 0;
     for (size_t i = 0; i < v.size(); ++i)

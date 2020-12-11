@@ -17,7 +17,7 @@ hint: just a copy algorithm with an extra condition.
 * take the new set as the result (return)
 
 ```c++
-vector<int> filter(const vector<int> &v)
+vector<int> filter(vector<int> v)
 {
     vector<int> result;
     for (size_t i = 0; i < v.size(); i++)

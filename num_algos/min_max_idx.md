@@ -14,7 +14,7 @@ Almost identical to a regular min algorithm, but stores the index of an element 
 That's not a problem because any value can be accessed through it's index. `val= v[idx]`
 
 ```c++
-int min_idx(const vector<int> &v)
+int min_idx(vector<int> v)
 {
   int min_val_idx = 0;
   for (size_t i = 0; i < v.size(); i++)

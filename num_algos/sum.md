@@ -27,7 +27,7 @@ We successfully measured the height of a very complex structure (the tower = the
 by using only very simple operations (measuring on brick's height, summing two numbers).
 
 ```c++
-int sum(const vector<int> &v)
+int sum(vector<int> v)
 {
     int sum_so_far = 0;
     for (size_t i = 0; i < v.size(); i++) // for each available index in v

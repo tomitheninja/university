@@ -24,7 +24,7 @@ If you need to implement the find value algorithm for primitives (99.9% you are 
 // Finds a value greater than 5
 // If found set's the result parameter to the number and returns true
 // If not found returns false
-bool find_val(const vector<int> &v, int &result)
+bool find_val(vector<int> v, int &result)
 {
   for (size_t i = 0; i < v.size(); i++)
   {
@@ -54,7 +54,7 @@ if (find_val(v, result)) {
 // Finds a value greater than min
 // If found set's the result parameter to the number and returns true
 // If not found returns false
-bool find_val(const vector<int> &v, int &result, int min)
+bool find_val(vector<int> v, int &result, int min)
 {
   for (size_t i = 0; i < v.size(); i++)
   {

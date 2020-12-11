@@ -19,7 +19,7 @@ return false
 ## I recommend string.find != string::nops instead ~~Clean version~~
 
 ```c++
-bool is_substring(const string &s1, const string &s2)
+bool is_substring(string s1, string s2)
 {
     for (int i = 0; i <= s1.size() - s2.size(); i++)
     {
@@ -45,7 +45,7 @@ bool is_substring(const string &s1, const string &s2)
 
 ```c++
 // returns true if s2 is a substring of s1
-bool is_substring(const string &s1, const string &s2)
+bool is_substring(string s1, string s2)
 {
     // The latest position where s2 can start is
     // is s1.size() - s2.size()

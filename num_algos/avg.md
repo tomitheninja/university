@@ -19,7 +19,7 @@ Dividing integers by integers will also return integers, but we want to avg as a
 So we need to convert any of our number's into a real number so the result will also include the fraction.
 
 ```c++
-float avg(const vector<int> &v)
+float avg(vector<int> v)
 {
   return (float)sum(v) / v.size();
 }
@@ -40,7 +40,7 @@ Dividing a real number by any number will result in a real number.
 So it works like expected.
 
 ```c++
-float avg(const vector<float> &v)
+float avg(vector<float> v)
 {
   return sum_real(v) / v.size();
 }

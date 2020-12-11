@@ -18,7 +18,7 @@ Algorithm:
 ```c++
 // Returns the index of the item, if it found it
 // returns -1 if not found
-int find_index_of(const vector<int> &v, int item)
+int find_index_of(vector<int> v, int item)
 {
     for (size_t i = 0; i < v.size(); ++i)
     {

@@ -12,7 +12,7 @@ that's because the answer to the "is there any" question is **yes** or **no** an
 
 ```c++
 // Check if any of the items in the vector matches a criteria
-bool any(const vector<int> &v)
+bool any(vector<int> v)
 {
     for (size_t i = 0; i < v.size(); ++i)
     {
@@ -32,7 +32,7 @@ bool any(const vector<int> &v)
 
 ```c++
 // Check if any of the items in the vector matches a criteria
-bool any(const vector<int> &v, int min_size)
+bool any(vector<int> v, int min_size)
 {
     for (size_t i = 0; i < v.size(); ++i)
     {

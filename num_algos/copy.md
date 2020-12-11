@@ -6,7 +6,7 @@ You will almost certainly have to use both on the exam if you have to complete s
 
 ```c++
 // returns a copy of v
-vector<int> copy(const vector<int> &v)
+vector<int> copy(vector<int> v)
 {
   vector<int> v2;
   // note: v2.size() == 0, here
@@ -42,7 +42,7 @@ In this case, you have to create a (reference) parameter to each value you want 
 // copies v1 into v2
 // v2 is the output param
 // so it must be a non-constant reference
-void copy(const vector<int> &v1, vector<int> &v2)
+void copy(vector<int> v1, vector<int> v2)
 {
   // note: v2.size() == 0, here
   for (size_t i = 0; i < v1.size(); i++)

@@ -20,7 +20,7 @@ keep the larger. That's the largest of all the bricks.
 
 ```c++
 // Find the largest number in the vector
-int find_largest(const vector<int> &v)
+int find_largest(vector<int> v)
 {
     int largest_so_far = v[0];
     for (size_t i = 0; i < v.size(); i++)
