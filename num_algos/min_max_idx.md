@@ -27,3 +27,22 @@ int min_idx(const vector<int> &v)
   return min_val_idx;
 }
 ```
+
+## In case you can't access the previous value
+
+Cache the best value in a variable.
+
+```c++
+int legjobb_indexe = -1;
+float legjobb_ertek = 0; // this is the cache
+for (int i = 0; i < v.size(); i++)
+{
+    float mostani = v[i];
+    if (mostani > legjobb_ertek)
+    {
+        legjobb_ertek = mostani;
+        legjobb_indexe = i;
+    }
+}
+return legjobb_indexe;
+```
