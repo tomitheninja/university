@@ -48,8 +48,16 @@ Contributions in code and feature requests are welcomed.
 * [input / output algorithms](./io)
 * [string algorithms](./string_algos)
 
+## YouTube videos
+
+1. https://youtu.be/Vh25SfkYI50
+2. https://youtu.be/OnUzdRrGJPs
+3. https://youtu.be/L5LhC03X5DQ
+4. https://youtu.be/kQFLd7-b4es
+5. https://youtu.be/MVXkcq6brZU
+
 TODO:
 
-* algorithms on struct vectors
+* algorithms on struct vectors (check the videos)
 * learn graphics & create a tutorial for it (maybe I won't have time for that)
 * pass the exam
