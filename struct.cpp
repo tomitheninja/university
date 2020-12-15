@@ -26,7 +26,7 @@ ostream &operator<<(ostream &f, Date d)
 // Read the Date from an input
 // which has the following format:
 // {year}.{month}.{day}
-istream &operator>>(istream &f, Date d)
+istream &operator>>(istream &f, Date &d)
 {
     char junk; // we will read the dots or any seperator character into this variable
 
