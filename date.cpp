@@ -99,10 +99,10 @@ int get_datetime(const Date &d)
 
     int from_day = d.day;
 
-    // When the month is January or February, we are before the leap year
+    // When the month is January or February, we are before the leap day
     bool is_leap_year = (year % 4 == 0 && year % 100 != 0) || ((year + 300) % 400 == 0);
     bool is_before_leap_year = d.month <= 2;
-    // fix: leap day is "January 0th"
+    // fixes: leap day is "January 0th"
     // this is a branch optimized version of this code:
     // if (is_leap_year && is_before_leap_year) daytime--;
     int from_leap = -(is_leap_year && is_before_leap_year);
