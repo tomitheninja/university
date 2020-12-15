@@ -47,6 +47,7 @@ Contributions in code and feature requests are welcomed.
   * [fun ones](./fun_practising_tasks.md) (In hungarian)
 * [input / output algorithms](./io)
 * [string algorithms](./string_algos)
+* [date library](./date.cpp)
 
 ## YouTube videos
 
