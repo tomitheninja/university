@@ -1,0 +1,49 @@
+BevProg év végi nyílthelyi
+
+Ez a te személyre szabott feladatod, amiben az alább felsorolt részfeladatokat kell megoldani. Ha kérdésed van, azt "kérdeznék" üzenettel a fő chat ablakban jelezd.
+
+A feldolgozni való fájl első sora egy fejléc. Abban magyarázat van a fájl oszlopaihoz. Ha a programod csak úgy működik, hogy ki kell hozzá törölni a fejlécet, akkor az nem maxpontos, de elfogadható.
+
+1. feladat (beugró, érvényesség feltétele)
+
+Melyek azok az európai országok, ahol legalább egyszer meghaladta a 100-at a napi halálozás? A sorrend mindegy, de egy tétel nem szerepelhet többször
+
+(megf:
+Austria
+Belgium
+Bosnia_and_Herzegovina
+Bulgaria
+Czechia
+France
+Germany
+Greece
+Hungary
+Ireland
+Italy
+Netherlands
+Poland
+Romania
+Russia
+Slovenia
+Spain
+Sweden
+Switzerland
+Turkey
+Ukraine
+United_Kingdom)
+
+2. feladat
+
+Add meg a legkisebb népességű országot amelyik Európa régióban sosem mért napi 200 fertőzöttnél többet (Holy_See)
+
+3. feladat
+
+Készíts kimutatást földrészenként összes fertőzöttből, tehát az eredmény egy táblázat, aminek sorai földrésznév : összes fertőzésszám, konkrét példa részlet Asia : 16782046
+Ha a megfejtő programszakasz bedrótozott adatokat tartalmaz amiket a fájlból nyertél, 10 helyett 8 pontot ér a megfejtés ha csak szöveges adatok vannak bedrótozva, és érvénytelen, ha számadatok vannak beleírva
+
+4. feladat
+
+Melyik a legnagyobb kihagyás adatszolgáltatásban? Hány napos?
+
+Az évvégi nyílthelyi érvényes, ha a beugrót elfogadják érvényesnek. Az a) b) c) és d) feladatokra adható funkció pontok 10-10-10-10 pontot érnek, emellé 10+10 pont kapható függvények és rekordok szervezésének eleganciájára. Az eleganciapontok értéke összesen maximum a funkciópontok összege lehet a b) c) d) feladatokban, a beugróra külön nem jár.
+
