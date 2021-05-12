@@ -1,0 +1,16 @@
+PROGRAM p
+  VÁLTOZÓK:
+    n, i: EGÉSZ
+ 
+  BE: n
+  i := 2
+  CIKLUS AMÍG n > 1
+    HA n MOD i = 0 AKKOR
+      KI: i, SV
+      n := KEREK (VALÓS n / VALÓS i)
+    HA_VEGE
+    HA n MOD i /= 0 AKKOR
+      i := i + 1
+    HA_VEGE
+  CIKLUS_VEGE
+PROGRAM_VEGE

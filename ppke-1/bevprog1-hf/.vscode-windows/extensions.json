@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "PKief.material-icon-theme",
+        "CoenraadS.bracket-pair-colorizer-2",
+        "GrapeCity.gc-excelviewer"
+    ],
+    "unwantedRecommendations": [
+        "formulahendry.code-runner",
+        "austin.code-gnu-global"
+    ]
+}

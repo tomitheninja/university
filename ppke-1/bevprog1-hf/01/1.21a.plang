@@ -1,0 +1,9 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    query, txt: SZÖVEG
+
+  BE: query
+  BE: txt
+  KI: txt @ query < |txt|
+PROGRAM_VEGE
+

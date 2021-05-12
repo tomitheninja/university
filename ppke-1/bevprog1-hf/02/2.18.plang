@@ -1,0 +1,17 @@
+PROGRAM p
+  VÁLTOZÓK:
+    name: SZÖVEG,
+    i: EGÉSZ
+ 
+  BE: name
+  i := 0
+  CIKLUS AMÍG i < |name|
+    HA name[i] = NAGY name[i] AKKOR
+      KI: KIS name[i]
+    HA_VEGE
+    HA name[i] /= NAGY name[i] AKKOR
+      KI: NAGY name[i]
+    HA_VEGE
+    i := i + 1
+  CIKLUS_VEGE
+PROGRAM_VEGE

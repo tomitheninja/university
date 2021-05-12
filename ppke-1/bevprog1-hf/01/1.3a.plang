@@ -1,0 +1,8 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    x, y: EGÉSZ
+ 
+  BE: x, y
+  KI: x = 0 ÉS y = 0
+PROGRAM_VEGE
+

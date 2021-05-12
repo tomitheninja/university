@@ -1,0 +1,13 @@
+PROGRAM p
+  VÁLTOZÓK:
+    txt, before, after: SZÖVEG,
+    hit_idx: EGÉSZ
+ 
+  BE: txt
+  before := "alma"
+  after := "körte"
+  hit_idx := txt @ before
+  KI: txt[0:hit_idx]
+  KI: after
+  KI: txt[hit_idx + |before|:|txt|]
+PROGRAM_VEGE

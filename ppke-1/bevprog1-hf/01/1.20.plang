@@ -1,0 +1,8 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    txt: SZÖVEG
+ 
+  BE: txt
+  KI: nagy txt[0] + txt[1:|txt|]
+PROGRAM_VEGE
+

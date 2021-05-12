@@ -1,0 +1,38 @@
+PROGRAM p
+  VÁLTOZÓK:
+    n, asd, k, n_fakt, a, b, i: EGÉSZ
+ 
+  BE: asd
+  n := 0
+  CIKLUS AMÍG n < asd
+    n_fakt := 1
+    ** //- calculate n fakt
+    i := 1
+    CIKLUS AMÍG i <= n
+      n_fakt := n_fakt * i
+      i := i + 1
+    CIKLUS_VÉGE
+    k := 0
+    CIKLUS AMÍG k <= n
+      a := 1
+      b := 1
+      ** //- calculate a( first divider)
+      i := 1
+      CIKLUS AMÍG i <= k
+        a := a * i
+        i := i + 1
+      CIKLUS_VÉGE
+      ** //- calculate b( second divider)
+      i := 1
+      CIKLUS AMÍG i <= n - k
+        b := b * i
+        i := i + 1
+      CIKLUS_VÉGE
+      KI: KEREK (VALÓS n_fakt / VALÓS a / VALÓS b), ' '
+      k := k + 1
+    CIKLUS_VÉGE
+    n := n + 1
+    KI: SV
+  CIKLUS_VÉGE
+  
+PROGRAM_VÉGE
