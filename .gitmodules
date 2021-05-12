@@ -1,0 +1,3 @@
+[submodule "szemeszter-2/matlab"]
+	path = szemeszter-2/matlab
+	url = git@github.com:tomitheninja/matlab.git
