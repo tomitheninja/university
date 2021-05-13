@@ -1,0 +1,20 @@
+** Döntsd el egy tetsz?leges szövegr?l, hogy a sorai ABC- sorrendben vannak- e.
+PROGRAM p
+    VÁLTOZÓK:
+      i, n: EGÉSZ,
+      x, y: SZÖVEG,
+      ok: LOGIKAI
+   
+    BE: n
+    BE: x
+    i := 1
+    ok := IGAZ
+    CIKLUS AMÍG ok ÉS i <= n
+      BE: y
+      ok := x < y
+      x := y
+      i := i + 1
+    CIKLUS_VÉGE
+    KI: ok
+  PROGRAM_VÉGE
+  

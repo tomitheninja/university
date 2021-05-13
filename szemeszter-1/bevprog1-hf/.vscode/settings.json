@@ -1,0 +1,13 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "debug.inlineValues": true,
+    "files.autoSave": "afterDelay",
+    "files.associations": {
+        "ostream": "cpp"
+    }
+}
