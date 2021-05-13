@@ -10,3 +10,5 @@
 ## [Lineáris Algebra I.](./linalg1)
 
 ## [Analízis I.](https://github.com/tomitheninja/university/tree/master/szemeszter-1/anal1)
+
+## [Középiskolai fizika](https://github.com/tomitheninja/university/tree/master/szemeszter-1/fiz0)
