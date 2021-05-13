@@ -11,8 +11,6 @@
 
 ## 📖 Szemeszterek
 
-- ### PPKE-ITK 1. félév
+- ### [PPKE-ITK 1. félév](./szemeszter-1)
 
-- ### PPKE-ITK 2. félév
-
-  - #### [MatLab](./szemeszeter-2/matlab)
+- ### [PPKE-ITK 2. félév](./szemeszter-2)
