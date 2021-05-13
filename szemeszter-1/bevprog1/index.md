@@ -19,7 +19,7 @@ I wrote more than half of this repository while being half asleep.
 
 That means there are probably multiple issues with it.
 
-Fill free report them via [github issues](https://github.com/tomitheninja/bevprog/issues) or on [discord](http://discordapp.com/users/335860149749153802).
+Fill free report them via [github issues](https://github.com/tomitheninja/university/issues) or on [discord](http://discordapp.com/users/335860149749153802).
 
 Contributions in code and feature requests are welcomed.
 
@@ -47,7 +47,7 @@ Contributions in code and feature requests are welcomed.
   * [fun ones](./fun_practising_tasks.md) (In hungarian)
 * [input / output algorithms](./io)
 * [string algorithms](./string_algos)
-* [date library](./date.cpp)
+* [date library](https://github.com/tomitheninja/university/blob/master/szemeszter-1/bevprog1/date.cpp)
 
 ## YouTube videos
 
@@ -60,5 +60,4 @@ Contributions in code and feature requests are welcomed.
 TODO:
 
 * algorithms on struct vectors (check the videos)
-* learn graphics & create a tutorial for it (maybe I won't have time for that)
 * pass the exam

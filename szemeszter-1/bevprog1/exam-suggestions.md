@@ -2,7 +2,7 @@
 
 ## --> use a search engine <-- (while you study)
 
-![](./stackoverflow.jpg)
+![](https://github.com/tomitheninja/university/blob/master/szemeszter-1/bevprog1/stackoverflow.jpg)
 
 use google or duckduckgo. use them more than often. Even more often than that.
 
