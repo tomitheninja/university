@@ -5,16 +5,14 @@
 [![Updated Badge](https://badges.pufler.dev/updated/tomitheninja/university)](https://tomitheninja.github.io/university/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-<br>
-
 ## 🏁 Szigorlatok
 
 - ### [Matematika szigorlat](./matematika-szigorlat)
-
-<br>
 
 ## 📖 Szemeszterek
 
 - ### PPKE-ITK 1. félév
 
 - ### PPKE-ITK 2. félév
+
+  - #### [MatLab](./szemeszter-2/matlab)
