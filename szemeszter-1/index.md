@@ -2,7 +2,7 @@
 
 ## Bevezetés a programozásba
 
-- [a jegyzeteim](https://github.com/tomitheninja/bevprog)
+- [a jegyzeteim](./bevprog1)
 - [a megoldásaim](https://github.com/tomitheninja/university/tree/master/szemeszter-1/bevprog1-hf)
 
 ## [Diszkrét Matematika I.](https://github.com/tomitheninja/university/tree/master/szemeszter-1/dm1)
