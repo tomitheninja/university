@@ -15,4 +15,4 @@
 
 - ### PPKE-ITK 2. félév
 
-  - #### [MatLab](./szemeszter-2/matlab)
+  - #### [MatLab](./szemeszeter-2/matlab)
