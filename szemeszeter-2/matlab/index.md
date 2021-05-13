@@ -4,9 +4,9 @@
 
 [Összesített diák](https://users.itk.ppke.hu/~sudta/matlab.pdf)
 
-[cheatsheet](https://tomitheninja.github.io/university/szemeszter-2/matlab)
+[cheatsheet](https://tomitheninja.github.io/university/szemeszeter-2/matlab)
 
-[GitHub repo](https://github.com/tomitheninja/matlab/)
+[GitHub repo](https://github.com/tomitheninja/university/tree/master/szemeszeter-2/matlab)
 
 # 📝 Table of Contents
 
