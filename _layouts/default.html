@@ -64,6 +64,8 @@
       </script>
     {% endif %}
     <hr />
-    {{ site.pages }}
+    {% for p in site.pages %}
+      <p><a href="{{p.url | relative_url}}">{{ p.title }}</a></p>
+    {% endfor %}
   </body>
 </html>
