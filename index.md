@@ -1,5 +1,3 @@
-# 📚 A jegyzeteim 📚
-
 ## 🏁 Szigorlatok
 
 - ### [Matematika szigorlat](./matematika-szigorlat)
