@@ -67,15 +67,18 @@
     <script>
       const toggleSwitch = document.getElementById('theme-switch');
 
-      function switchTheme(e) {
-        const theme = e.target.checked ? 'dark' : 'light';
+      function switchTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
+        toggleSwitch.checked = theme === 'dark';
       }
 
-      toggleSwitch.addEventListener('change', switchTheme, false);
+      toggleSwitch.addEventListener('change', (e) => switchTheme(e.target.checked ? 'dark' : 'light'), false);
 
-      toggleSwitch.checked = localStorage.getItem('data-theme') == 'dark';
+      const prevTheme = localStorage.getItem('data-theme');
+      if (prevTheme) {
+        switchTheme(prevTheme)
+      }
     </script>
   </body>
 </html>
