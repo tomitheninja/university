@@ -531,7 +531,7 @@ Definíció: $(a, b) = 0$
 
 Megegyezés alapján az $\underline{a}$, $\underline{b}$, $\underline{c}$ független vektorok jobbrendszert alkotnak, ha az $\underline{a}$ és $\underline{b}$ vektorok által kifeszített síkot a $\underline{c}$ vektor irányából nézve létezik olyan $0 < \alpha \le \pi$ fokú elforgatás, hogy $forgat(b) = a$.
 
-<img src="righthand.png">
+<img src="righthand.png" width="200px">
 
 $\underline{c}$ irányából nézve, $\underline{b}$-t az óramutató járásának megfelelően legfeljebb 90 fokot kell forgatni, hogy megkapjuk $\underline{a}$-t
 
