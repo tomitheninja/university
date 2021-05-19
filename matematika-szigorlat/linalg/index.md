@@ -314,7 +314,7 @@ Az öt axióma:
 --- | --- | ---
 | 1. | Az eredménye is eleme V-nek | zártság |
 | 2. | $a + b = b + a$ | kommutatív |
-| 3. | $(a + b) + c = a + (b + c)$<br>bizonyítás: bármely pontozott útvonalat választjuk, ugyan oda lyukadunk ki<br><img src="./sum_associative.png"> | asszociatív |
+| 3. | $(a + b) + c = a + (b + c)$<br>bizonyítás: bármely pontozott útvonalat választjuk, ugyan oda lyukadunk ki<br><img src="./sum_assocative.png"> | asszociatív |
 | 4. | $0 + a = a = a + 0$ | semleges elem (bal- és jobb oldali) |
 | 5. | $(-a) + a = 0 = a + (-a)$<br>ahol -a az az a hosszú, de azzal ellentétes irányú vektor | ellentett |
 
