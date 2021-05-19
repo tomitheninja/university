@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/script.js' | relative_url }}" async></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-chtml-full.js"></script>
     <script>
-      MathJax = {
-        tex: {
-	  inlineMath: [['$', '$'], ['\\(', '\\)']],
-	  displayMath: [['$$','$$'], ['\\[','\\]']],
-        }
-      };
+      MathJax = {tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+      }};
     </script>
 {% seo %}
   </head>
@@ -64,21 +63,5 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    <script>
-      const toggleSwitch = document.getElementById('checkbox');
-
-    function switchTheme(theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('data-theme', theme);
-      toggleSwitch.checked = theme === 'dark';
-    }
-
-    toggleSwitch.addEventListener('change', (e) => switchTheme(e.target.checked ? 'dark' : 'light'), false);
-
-    const prevTheme = localStorage.getItem('data-theme');
-    if (prevTheme) {
-      switchTheme(prevTheme)
-    }
-    </script>
   </body>
 </html>
