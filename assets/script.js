@@ -16,22 +16,24 @@ if (prevTheme) {
 
 // generate table of contents
 const main = document.getElementById('main_content')
-const arr = []
-for(let i = 0; i < main.children.length; i++)
+if (main.children.length > 100)
 {
-  const x = main.children[i];
-  if (x.tagName == 'H2') arr.push({title: x.innerText, id: x.id, children: []})
-  if (x.tagName == 'H3') arr[arr.length - 1].children.push( {title: x.innerText, id: x.id} )
-}
-const container = document.getElementById('container')
-main.innerHTML = `
-<div id="tableofcontents">
+  const arr = []
+  for(let i = 0; i < main.children.length; i++)
+  {
+    const x = main.children[i];
+    if (x.tagName == 'H2') arr.push({title: x.innerText, id: x.id, children: []})
+    if (x.tagName == 'H3') arr[arr.length - 1].children.push( {title: x.innerText, id: x.id} )
+  }
+  main.innerHTML = `
+  <div id="tableofcontents">
   <h1>Table Of Contents</h1>
   <ul>
-    ${arr.map(h1 =>
-        `<li>
-            <a href="#${h1.id}">${h1.title}</a>
-            <ul>${h1.children.map(h2 => `<li><a href="#${h2.id}">${h2.title}</a></li>`).join('')}</ul>
-        </li>`).join('')}
-  </ul>
-</div>` + main.innerHTML
+  ${arr.map(h1 =>
+    `<li>
+    <a href="#${h1.id}">${h1.title}</a>
+    <ul>${h1.children.map(h2 => `<li><a href="#${h2.id}">${h2.title}</a></li>`).join('')}</ul>
+    </li>`).join('')}
+    </ul>
+    </div>` + main.innerHTML
+  }
