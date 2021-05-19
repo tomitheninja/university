@@ -12,9 +12,9 @@ Egy egyenlet akkor lineáris, ha minden tényező legfeljebb első fokon szerepe
 ### Vektorok
 
 $
-x\begin{bmatrix}2\\ 3\end{bmatrix} +
-y\begin{bmatrix}-5\\ 9\end{bmatrix} =
-\begin{bmatrix}8\\ -12\end{bmatrix}
+x\begin{bmatrix}2\\\\ 3\end{bmatrix} +
+y\begin{bmatrix}-5\\\\ 9\end{bmatrix} =
+\begin{bmatrix}8\\\\ -12\end{bmatrix}
 $
 
 ### Mátrixok
@@ -23,7 +23,7 @@ A mátrix az egy mxn méretű táblázat, amit fel lehet használni például eg
 
 $
 \underline{\underline{A}} = \left[\begin{array}{cc|c}
- 2 & -5 & 8 \\ 3 & 9 & -12
+ 2 & -5 & 8 \\\\ 3 & 9 & -12
 \end{array}\right]
 $
 
@@ -54,7 +54,7 @@ $ \det(x) = x $ (önmaga)
 ### 2x2 determináns kifejtése
 
 $ \begin{bmatrix}
-a & b\\c & d
+a & b\\\\c & d
 \end{bmatrix} $ mátrix determinánsa = $ ad - bc $
 
 ### Nagyobb mátrix determinánsa
@@ -81,7 +81,7 @@ Előnye, hogy sokkal kevesebb számítást igényel nagyobb (3x3, 4x4) mátrixok
 
 Gauss elemináció segítségével előállítható egy ilyen mátrix: $
 \begin{bmatrix}
-a & - & -\\b & c & -\\d & e & f
+a & - & -\\\\b & c & -\\\\d & e & f
 \end{bmatrix}
 $
 
