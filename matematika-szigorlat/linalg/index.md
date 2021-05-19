@@ -27,7 +27,7 @@ $
 \end{array}\right]
 $
 
-A mátrixot kibővítettnek hívjuk, ha tartalmazza az egyenlet megoldásait is. Ennek jelölése: $ [A|b] $
+A mátrixot kibővítettnek hívjuk, ha tartalmazza az egyenlet megoldásait is. Ennek jelölése: $ [A\vert b] $
 
 # Determináns
 
