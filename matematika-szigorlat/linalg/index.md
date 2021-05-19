@@ -11,11 +11,11 @@ Egy egyenlet akkor lineáris, ha minden tényező legfeljebb első fokon szerepe
 
 ### Vektorok
 
-$
+$$
 x\begin{bmatrix}2\\ 3\end{bmatrix} +
 y\begin{bmatrix}-5\\ 9\end{bmatrix} =
 \begin{bmatrix}8\\ -12\end{bmatrix}
-$
+$$
 
 ### Mátrixok
 
