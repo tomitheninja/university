@@ -65,7 +65,10 @@
     {% endif %}
     <hr />
     {% for p in site.pages %}
+    {% if p.url contains page.dir %}
       <p><a href="{{p.url | relative_url}}">{{ p.title }}</a></p>
+    {% else %}
+
     {% endfor %}
   </body>
 </html>
