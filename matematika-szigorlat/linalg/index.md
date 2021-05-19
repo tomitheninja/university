@@ -177,7 +177,7 @@ Sokkal gyorsabb, ha az megoldásvektornak csak egy elemét szeretnénk kiszámí
 
 Példa $x_2$-re, $\underline{\underline{A}}\cdot \underline{x} = \underline{B}$ esetén:
 
-\[
+$$
 \underline{x}_2 = \frac{\begin{vmatrix}
 a & B_1 & c & d\\
 e & B_2 & f & g\\
@@ -185,7 +185,7 @@ h & B_3 & i & j\\
 k & B_4 & l & m
 \end{vmatrix}}
 {det(A)}
-\]
+$$
 
 Tehát $\underline{x}_i$ = az eredeti $\underline{\underline{A}}$ mátrix i-edik oszlopába beírt b vektor determinánsa, osztva $\underline{\underline{A}}$ determiánsával.
 
@@ -193,7 +193,7 @@ Tehát $\underline{x}_i$ = az eredeti $\underline{\underline{A}}$ mátrix i-edik
 
 $\underline{x} = \underline{\underline{A}}^{-1}\cdot \underline{b}$
 
-A mátrixszorzás szerint $\underline{x}_j$-edik eleme = $A^{-1}_{j}\cdot b \implies \underline{x}_j = \frac{1}{det(A)} (A_{1j}B_1 + A_{2j}B_2 + ...)$
+A mátrixszorzás szerint $\underline{x}_j$ -edik eleme = $A^{-1}_{j}\cdot b \implies \underline{x}_j = \frac{1}{det(A)} (A_{1j}B_1 + A_{2j}B_2 + ...)$
 
 Ha ebből indultunk volna ki: $ \frac{1}{det(A)}adj(A)\cdot b$, akkor is ugyan ezt kaptuk volna
 
