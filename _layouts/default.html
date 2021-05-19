@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-	  inlineMath: [['$','$'], ["\\(","\\)"] ],
-        }
-      });
-    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-chtml-full.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+	  inlineMath: [['$', '$'], ['\\(', '\\)']],
+	  displayMath: [['$$','$$'], ['\[','\]']],
+        }
+      };
+    </script>
 {% seo %}
   </head>
 
@@ -40,7 +40,7 @@
           <a href="https://tomitheninja.github.io/university"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
         </section>
 	{% if page.path != "index.md" %}
-	  <a href="..">Egy mappával feljebb</a>
+	  <a href="..">.. Egy mappával feljebb</a>
         {% endif %}
       </div>
     </header>
