@@ -39,11 +39,10 @@
           <a href="https://tomitheninja.github.io/university"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
         </section>
       </div>
+        {% if page.path != "index.md" %}
+	  <a href="..">Egy mappával feljebb</a>
+        {% endif %}
     </header>
-	  
-    {% if page.path != "index.md" %}
-      <a href="..">Egy mappával feljebb</a>
-    {% endif %}
 
     <div class="container">
       <section id="main_content">
