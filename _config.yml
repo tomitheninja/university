@@ -1,3 +1,5 @@
 theme: jekyll-theme-architect 
 title: tomitheninja
 description: Egyetemi, számtech jegyzetek
+kramdown:
+  math_engine: mathjax
