@@ -1,12 +1,15 @@
 @import "rouge-base16-dark";
 @import "default_colors";
+@import "fonts"
 
 :root {
-  --body-background: #0f0f0f;
-  --body-foreground: #e2e2e2;;
+  --body-background: #ffffff;
+  --body-foreground: #2E2E2E;;
+  --header-bg: #eeeeee;
   --header: #bb8600;
   --blockquote-color: #aaa;
   --blockquote-border: #666;
+  --fonts: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 $container-max-width: 1000px;
@@ -24,7 +27,7 @@ body {
   color: var(--body-foreground);
   font-size: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: var(--fonts);;
 }
 
 /* General & 'Reset' Stuff */
@@ -55,9 +58,8 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--header-bg);
   width: 100%;
-  border-bottom: 1px dashed var(--conifer); //header;
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
@@ -67,7 +69,7 @@ header h1 {
   line-height: 1.5;
   margin: 0 0 0 -40px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: var(--fonts);
   color: var(--conifer);//$header;
   // text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
   //              0 0 5px rgba(181, 232, 83, 0.1),
@@ -102,43 +104,16 @@ section img {
   max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: var(--header);
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--fonts);
   letter-spacing: -0.03em;
-  // text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-  //              0 0 5px rgba(181, 232, 83, 0.1),
-  //              0 0 10px rgba(181, 232, 83, 0.1);
 }
-
-#main_content h1 {
-  font-size: 30px;
+h1,h2,h3 {
+font-weight: normal;
+color: var(--header);
 }
-
-#main_content h2 {
-  font-size: 24px;
-}
-
-#main_content h3 {
-  font-size: 18px;
-}
-
-#main_content h4 {
-  font-size: 14px;
-}
-
-#main_content h5 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
-}
-
-#main_content h6 {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #999;
-  margin: 0 0 5px 0;
+h4,h5,h6 {
+  font-weight: bold;
 }
 
 dt {
