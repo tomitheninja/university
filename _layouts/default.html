@@ -40,6 +40,10 @@
         </section>
       </div>
     </header>
+	  
+    {% if page.path != "index.md" %}
+      <a href="..">Egy mappával feljebb</a>
+    {% endif %}
 
     <div class="container">
       <section id="main_content">
