@@ -65,20 +65,20 @@
       </script>
     {% endif %}
     <script>
-      const toggleSwitch = document.getElementById('theme-switch');
+      const toggleSwitch = document.getElementById('checkbox');
 
-      function switchTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        toggleSwitch.checked = theme === 'dark';
-      }
+    function switchTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('data-theme', theme);
+      toggleSwitch.checked = theme === 'dark';
+    }
 
-      toggleSwitch.addEventListener('change', (e) => switchTheme(e.target.checked ? 'dark' : 'light'), false);
+    toggleSwitch.addEventListener('change', (e) => switchTheme(e.target.checked ? 'dark' : 'light'), false);
 
-      const prevTheme = localStorage.getItem('data-theme');
-      if (prevTheme) {
-        switchTheme(prevTheme)
-      }
+    const prevTheme = localStorage.getItem('data-theme');
+    if (prevTheme) {
+      switchTheme(prevTheme)
+    }
     </script>
   </body>
 </html>
