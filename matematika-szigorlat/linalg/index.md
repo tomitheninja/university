@@ -193,7 +193,7 @@ Tehát $\underline{x}_i$ = az eredeti $\underline{\underline{A}}$ mátrix i-edik
 
 $\underline{x} = \underline{\underline{A}}^{-1}\cdot \underline{b}$
 
-A mátrixszorzás szerint $\underline{x}_j$ -edik eleme = $A^{-1}_{j}\cdot b \implies \underline{x}_j = \frac{1}{det(A)} (A_{1j}B_1 + A_{2j}B_2 + ...)$
+<p>A mátrixszorzás szerint $\underline{x}_j$ -edik eleme = ${A^{-1}}_j \cdot b \implies \underline{x}_j = \frac{1}{det(A)} (A_{1j}B_1 + A_{2j}B_2 + …)$</p>
 
 Ha ebből indultunk volna ki: $ \frac{1}{det(A)}adj(A)\cdot b$, akkor is ugyan ezt kaptuk volna
 
