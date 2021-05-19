@@ -1,3 +1,7 @@
+---
+title: "jegyzetek"
+---
+
 ## 🏁 Szigorlatok
 
 - ### [Matematika szigorlat](./matematika-szigorlat)
