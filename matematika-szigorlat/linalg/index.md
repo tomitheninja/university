@@ -211,9 +211,9 @@ Létezik inverz = determináns nem nulla
 
 ha $D \ne 0$, akkor nem összefüggő $\implies$ egyértelmű előállítás
 
-## Mátrix inverzze
+### Mátrix inverzze
 
-### Egységmátrix
+#### Egységmátrix
 
 Def: $A \cdot E = A$ (vektortérnél részletesebben)
 
@@ -225,13 +225,13 @@ a 3x3-as egységmátrix: $\underline{\underline{E}} = \begin{bmatrix}
 
 Tehát ez az egység (1) kibővítése az $R^n$ térre.
 
-### Inverz kiszámítása Gauss eleminációval
+#### Inverz kiszámítása Gauss eleminációval
 
 Megfelelő lépésekkel el lehet jutni az $[\underline{\underline{A}}\vert \underline{\underline{E}}]$ mátrixból a $[\underline{\underline{E}}\vert \underline{\underline{A}}^{-1}]$ mátrixba
 
 A fenti példában E az A-val azonos típusú egységmátrix.
 
-### 2x2 inverze adjungált segítségével
+#### 2x2 inverze adjungált segítségével
 
 ha $\underline{\underline{A}} = \begin{bmatrix}
 a & b\\\\c & d
@@ -246,7 +246,7 @@ Az adjungált mátrix pedig így áll elő:
 - reverse(főátló)
 - negative(mellékátló)
 
-### 3x3 inverze adjungált segítségével
+#### 3x3 inverze adjungált segítségével
 
 Legyen $\underline{\underline{A}} := \begin{bmatrix}
 a & b & c\\\\d & e & f\\\\g & h & i
@@ -527,7 +527,7 @@ $= \vert a \vert^2 + \vert b \vert^2 - 2 \vert a \vert \vert b \vert cos(a, b)$
 
 Definíció: $(a, b) = 0$
 
-## Jobbrendszer
+### Jobbrendszer
 
 Megegyezés alapján az $\underline{a}$, $\underline{b}$, $\underline{c}$ független vektorok jobbrendszert alkotnak, ha az $\underline{a}$ és $\underline{b}$ vektorok által kifeszített síkot a $\underline{c}$ vektor irányából nézve létezik olyan $0 < \alpha \le \pi$ fokú elforgatás, hogy $forgat(b) = a$.
 
@@ -535,17 +535,17 @@ Megegyezés alapján az $\underline{a}$, $\underline{b}$, $\underline{c}$ függe
 
 $\underline{c}$ irányából nézve, $\underline{b}$-t az óramutató járásának megfelelően legfeljebb 90 fokot kell forgatni, hogy megkapjuk $\underline{a}$-t
 
-## Vektorális (kereszt) szorzat
+### Vektorális (kereszt) szorzat
 
 Geometrikai jelentés: paralelogramma területe
 
 $\vec{a}\times\vec{b} = \vert a \vert\vert b \vert \sin(a,b)e$, ahol $\underline{e}$ egy $\underline{a}$-ra és $\underline{b}$-re is merőleges vektor és \{$\underline{a}$, $\underline{b}$, $\underline{e}$\} jobbrendszert alkot.
 
-## Párhuzamosság vol. 2
+#### Párhuzamosság vol. 2
 
 Két vektor párhuzamos, ha $\lambda \underline{a} = \underline{b}$, de ez ekvivalens azzal, hogy $\underline{a} \times \underline{b} = \underline{0}$
 
-## Vektorális szorzat, determináns kifejtésével
+#### Vektorális szorzat, determináns kifejtésével
 
 $$
 \vec{a}\times\vec{b} = \begin{vmatrix}
@@ -555,7 +555,7 @@ b_1 & b_2 & b_3
 \end{vmatrix}
 $$
 
-### Bizonyítás
+##### Bizonyítás
 
 Írjuk fel az a és b vektorokat egy i, j, k bázisban.
 
@@ -577,7 +577,7 @@ más sorrendben:
 
 Ha a és b vektorok koordinátáit minden létező kombinációban ($a_ixb_i + a_ixb_j + a_ixb_k + a_jxb_i + ...$, majd a fenti felsorolás szerint egyszerűsítünk, akkor pont a determináns értékét fogjuk megkapni.
 
-## Vegyes szorzat
+#### Vegyes szorzat
 
 $\underline{a}\underline{b}\underline{c} = (\underline{a} \times \underline{b})\underline{c}$
 
