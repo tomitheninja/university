@@ -17,7 +17,7 @@ $container-max-width: 1000px;
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../images/bkg.png") 0 0;
+  background: $body-background 0 0;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
@@ -147,10 +147,6 @@ h1, h2, h3, h4, h5, h6 {
 dt {
   font-style: italic;
   font-weight: bold;
-}
-
-ul li {
-  list-style-image:url('../images/bullet.png');
 }
 
 blockquote {
