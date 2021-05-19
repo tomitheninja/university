@@ -27,7 +27,7 @@ if (main.children.length > 100)
   }
   main.innerHTML = `
   <div id="tableofcontents">
-  <h1>Table Of Contents</h1>
+  <h1>📝 Table Of Contents</h1>
   <ul>
   ${arr.map(h1 =>
     `<li>
