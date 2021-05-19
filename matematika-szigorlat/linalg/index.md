@@ -127,9 +127,7 @@ Megfelelő átalakításokkal létrehozható a lépcsős alak, amelyet már egys
 
 $
 \underline{\underline{A}} = \left[\begin{array}{ccc|c}
-  a & - & - & b_1\\\\
-  b & c & - & b_2\\\\
-  d & e & f & b_3
+  a & - & - & b_1\\\\b & c & - & b_2\\\\d & e & f & b_3
 \end{array}\right]
 $
 
@@ -138,8 +136,7 @@ $
 Ha egy csupa nullásokból álló egyenletet kapunk, akkor az adott egyenlet elhagyható:
 $
 \underline{\underline{A}} = \left[\begin{array}{cc|c}
-  1 & 1 & 2\\\\
-  0 & 0 & 0
+  1 & 1 & 2\\\\0 & 0 & 0
 \end{array}\right]
 $
 
@@ -149,8 +146,7 @@ Ha egy olyan egyenletet kapunk, amiben az egyenlet bal oldala nulla és az egyen
 
 $
 \underline{\underline{A}} = \left[\begin{array}{cc|c}
-  1 & 1 & 2\\\\
-  0 & 0 & 5
+  1 & 1 & 2\\\\0 & 0 & 5
 \end{array}\right]
 $
 
@@ -169,9 +165,7 @@ Két szabad változó esetén síkon, három vagy annál több szabad változó 
 Ha a lépcsők alak elérése után tovább folytatjuk az eleminációt, akkor kijöhet egy olyan egyenletrendszer, amelyről rögtön le lehet olvasni a megoldásokat:
 $
 \underline{\underline{A}} = \left[\begin{array}{ccc|c}
-  a &   &   & 1\\\\
-    & c &   & 2\\\\
-    &   & f & 3
+  a &   &   & 1\\\\& c &   & 2\\\\&   & f & 3
 \end{array}\right]
 $
 
@@ -240,11 +234,9 @@ A fenti példában E az A-val azonos típusú egységmátrix.
 ### 2x2 inverze adjungált segítségével
 
 ha $\underline{\underline{A}} = \begin{bmatrix}
-a & b\\\\
-c & d
+a & b\\\\c & d
 \end{bmatrix}$, akkor $\underline{\underline{A}}^{-1}$ = $\frac{1}{ad - bc} \begin{bmatrix}
-d & -b \\\\
--c & a
+d & -b \\\\-c & a
 \end{bmatrix}$
 
 ahol $\det(A) = ad - bc$
@@ -257,9 +249,7 @@ Az adjungált mátrix pedig így áll elő:
 ### 3x3 inverze adjungált segítségével
 
 Legyen $\underline{\underline{A}} := \begin{bmatrix}
-a & b & c\\\\
-d & e & f\\\\
-g & h & i
+a & b & c\\\\d & e & f\\\\g & h & i
 \end{bmatrix}$
 
 Ekkor ugye $\det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)$
