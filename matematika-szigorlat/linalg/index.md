@@ -393,18 +393,19 @@ Tegyük fel, hogy az $a_1$, $a_2$, ..., $a_n$ vektorok bázist alkotnak V vektor
 
 Legyen $v := \lambda_1 a_1 + \lambda_2 a_2 + ... + \lambda_n a_n$
 
-Egy tetszőleges olyan i indexet kiválasztva, hogy $\lambda_i \ne 0$ \textit{(mivel ezzel fogjuk leosztani a táblázat sorát)}
+Egy tetszőleges olyan i indexet kiválasztva, hogy $\lambda_i \ne 0$ *(mivel ezzel fogjuk leosztani a táblázat sorát)*
 
 $a_1, a_2, ..., a_{i-1}, v, a_{i+1}, ..., a_n$ is bázisa a térnek.
 
 (Az eredetiben kicserélve $a_i$-t, $v$-re)
+
 #### Bizonyítás: generátorrendszer
 
 Az eredeti $a_i$ vektor kifejezhető így:
 
-\[
+$$
 a_i = \sum_{j=1}^{i-1} \frac{\lambda_j}{\lambda_i} a_j + \frac{1}{\lambda_j} v - \sum_{j = i + 1}^{n} \frac{\lambda_j}{\lambda_i} a_j
-\]
+$$
 
 Segédlet a megjegyzéshez:
 
@@ -412,15 +413,15 @@ Segédlet a megjegyzéshez:
 - $\frac{v}{\lambda_i}$ (a jelenlegi sor)
 
 Legyen x egy tetszőleges eleme a vektortérnek. Tehát a régi bázisban
-\[
+$$
 x := \sum_{j=1}^{n} \xi_j a_j
-\]
+$$
 
 az új bázisban pedig
 
-\[
+$$
 x := \sum_{j \ne i} (\xi_j - \xi_i \frac{\lambda_j}{\lambda_i})a_j + \frac{\xi_i}{\lambda_i} v
-\]
+$$
 
 #### Bizonyítás: független (indirekten)
 
@@ -430,9 +431,9 @@ tegyük fel, hogy az új rendszer összefüggő: $\lambda_1 a_1 + \lambda_2 a_2 
 
 $\lambda_i$ - a kiindulási feltétel szerint - nem lehet nulla, ezért
 
-\[
+$$
 v = 0 a_i - \sum_{j \ne i} \frac{\lambda_j a_j}{\lambda_i}
-\]
+$$
 
 és ez valamiért ellentmondás.
 
@@ -445,9 +446,9 @@ saját értelmezés: ugye akkor összefüggő, ha nem minden $\lambda = 0$ és m
 - r := p oszlopának és q sorának találkozásánál lévő elem
 - s := p sorának és q oszlopának találkozásánál lévő elem
 
-\[
+$$
 q - \frac{rs}{p}
-\]
+$$
 
 ### Kicserélési tétel
 
@@ -457,15 +458,15 @@ Az az $a_1$, $a_2$, ... $a_n$ rendszer lineárisan független, akkor a $b_1$, $b
 
 Tegyük fel, hogy a $b_1, b_2, ..., b_{i-1}$ vektorokat már lecseréltük a $a_1, a_2, ..., a_{i-1}$ vektorokra.
 
-\[
+$$
 a_1, a_2, ..., a_{i-1}, b_i, b_{i+1}, ..., b_n
-\]
+$$
 
 A bázistranszformáció tétel miatt az $a_i$ vektor beépíthető  a bázisba és az $a$ vektor új ellőállítása a következő lesz:
 
-\[
+$$
 a_i = \lambda_1 a_1 + ... \lambda_{i-1} a_{i-1} + \lambda_i b_i + \lambda_n b_n
-\]
+$$
 
 A kiindulási feltétel miatt tudjuk, hogy $a_i$ nem áll elő így: $a_i \ne \lambda_1 a_1 + ... \lambda_{i-1} a_{i-1}$ (hiszen lineárisan független), ezért valamelyik b-s együttható biztosan nem nulla.
 
@@ -478,6 +479,7 @@ A V vektortér n dimenziós, ha tartalmaz n elemű bázist.
 Magyarul: dimenzió: legnagyobb bázis elemszáma
 
 Definíció szerint ha $V = \{\underline{0}\}$, akkor $dim(V) = 0$
+
 #### Véges dimenzió (példák)
 
 -$dim(R^n) = n$
@@ -555,13 +557,13 @@ Két vektor párhuzamos, ha $\lambda \underline{a} = \underline{b}$, de ez ekviv
 
 ## Vektorális szorzat, determináns kifejtésével
 
-\[
+$$
 \vec{a}\times\vec{b} = \begin{vmatrix}
 i & j & k\\
 a_1 & a_2 & a_3\\
 b_1 & b_2 & b_3
 \end{vmatrix}
-\]
+$$
 
 ### Bizonyítás
 
@@ -590,5 +592,3 @@ Ha a és b vektorok koordinátáit minden létező kombinációban ($a_ixb_i + a
 $\underline{a}\underline{b}\underline{c} = (\underline{a} \times \underline{b})\underline{c}$
 
 Geometriai jelentése: Paralalopipedon előjeles térfogata
-
-
