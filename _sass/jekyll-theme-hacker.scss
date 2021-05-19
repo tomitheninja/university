@@ -1,11 +1,14 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 
-$body-background: $cod-grey !default;
-$body-foreground: $gallery !default;
-$header: $conifer !default;
-$blockquote-color: $silver-chalice !default;
-$blockquote-border: $dove-grey !default;
+:root {
+  --body-background: #000000;
+  --body-foreground: $gallery;
+  --header: $conifer;
+  --blockquote-color: $silver-chalice;
+  --blockquote-border: $dove-grey;
+}
+
 $container-max-width: 1000px;
 
 @mixin media-max-width($max-width) {
@@ -17,8 +20,8 @@ $container-max-width: 1000px;
 body {
   margin: 0;
   padding: 0;
-  background: $body-background 0 0;
-  color: $body-foreground;
+  background: var(--body-background) 0 0;
+  color: var(--body-foreground);
   font-size: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -54,7 +57,7 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed $conifer; //header;
+  border-bottom: 1px dashed var(--conifer); //header;
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
@@ -65,7 +68,7 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
+  color: var(--conifer);//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -108,7 +111,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $header;
+  color: var(--header);
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -150,9 +153,9 @@ dt {
 }
 
 blockquote {
-  color: $blockquote-color;
+  color: var(--blockquote-color);
   padding-left: 10px;
-  border-left: 1px dotted $blockquote-border;
+  border-left: 1px dotted var(--blockquote-border);
 }
 
 pre {
@@ -228,11 +231,6 @@ hr {
   height: 16px;
   margin: 1px 8px 0 0;
   float: left;
-}
-
-.btn-github .icon {
-  opacity: 0.6;
-  background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
 /* Links
