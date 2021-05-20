@@ -399,11 +399,11 @@ Ekkor $\alpha$ és $\beta$ számokat koordinátának nevezzük.
 
 Tegyük fel, hogy az $a_1$, $a_2$, ..., $a_n$ vektorok bázist alkotnak V vektortér felett.
 
-Legyen $v := \lambda_1 a_1 + \lambda_2 a_2 + ... + \lambda_n a_n$
+Legyen $v := \lambda_1 a_1 +$ $\lambda_2 a_2$ $+ ... + \lambda_n a_n$
 
 Egy tetszőleges olyan i indexet kiválasztva, hogy $\lambda_i \ne 0$ *(mivel ezzel fogjuk leosztani a táblázat sorát)*
 
-$a_1, a_2, ..., a_{i-1}, v, a_{i+1}, ..., a_n$ is bázisa a térnek.
+$a_1, a_2, ..., a_{i-1}, v, a_{i+1}$ $, ..., a_n$ is bázisa a térnek.
 
 (Az eredetiben kicserélve $a_i$-t, $v$-re)
 
@@ -412,7 +412,7 @@ $a_1, a_2, ..., a_{i-1}, v, a_{i+1}, ..., a_n$ is bázisa a térnek.
 Az eredeti $a_i$ vektor kifejezhető így:
 
 $$
-a_i = \sum_{j=1}^{i-1} \frac{\lambda_j}{\lambda_i} a_j + \frac{1}{\lambda_j} v - \sum_{j = i + 1}^{n} \frac{\lambda_j}{\lambda_i} a_j
+a_i = \sum_{i \ne j} \frac{\lambda_j}{\lambda_i} a_j + \frac{1}{\lambda_j} v
 $$
 
 Segédlet a megjegyzéshez:
@@ -427,15 +427,16 @@ $$
 
 az új bázisban pedig
 
+x :=
 $$
-x := \sum_{j \ne i} (\xi_j - \xi_i \frac{\lambda_j}{\lambda_i})a_j + \frac{\xi_i}{\lambda_i} v
+ \sum_{j \ne i} (\xi_j - \xi_i \frac{\lambda_j}{\lambda_i})a_j + \frac{\xi_i}{\lambda_i} v
 $$
 
 #### Bizonyítás: független (indirekten)
 
 azért van rá szükség, mert ha generátorrendszer és független akkor bázis.
 
-tegyük fel, hogy az új rendszer összefüggő: $\lambda_1 a_1 + \lambda_2 a_2 + ... + \lambda_i v + \lambda_n a_n = 0$
+tegyük fel, hogy az új rendszer összefüggő: $\lambda_1 a_1 +$ $\lambda_2 a_2 + ... + \lambda_i v$ $+ \lambda_n a_n = 0$
 
 $\lambda_i$ - a kiindulási feltétel szerint - nem lehet nulla, ezért
 
@@ -536,7 +537,7 @@ Legyen $c := a-b$
 
 Ekkor $c^2 =$ $(a-b)(a-b) =$ $(a, a) + (b, b) - 2(a, b) =$
 
-$= \vert a \vert^2 + \vert b \vert^2 - 2 \vert a \vert \vert b \vert cos(a, b)$
+$= \vert a \vert^2 + \vert b \vert^2$ $- 2 \vert a \vert \vert b \vert cos(a, b)$
 
 ### Ortogonális (=merőleges)
 
@@ -590,7 +591,7 @@ más sorrendben:
 - $\underline{k} \times \underline{j} = -\underline{i}$
 - $\underline{i} \times \underline{k} = -\underline{j}$
 
-Ha a és b vektorok koordinátáit minden létező kombinációban ($a_ixb_i + a_ixb_j + a_ixb_k + a_jxb_i + ...$, majd a fenti felsorolás szerint egyszerűsítünk, akkor pont a determináns értékét fogjuk megkapni.
+Ha a és b vektorok koordinátáit minden létező kombinációban ($a_ixb_i + a_ixb_j$ $+ a_ixb_k + a_jxb_i + ...$), majd a fenti felsorolás szerint egyszerűsítünk, akkor pont a determináns értékét fogjuk megkapni.
 
 #### Vegyes szorzat
 
@@ -699,7 +700,11 @@ $$
 A bázistranszformáció tétel miatt az $a_i$ vektor beépíthető  a bázisba és az $a$ vektor új ellőállítása a következő lesz:
 
 $$
-a_i = \lambda_1 a_1 + ... \lambda_{i-1} a_{i-1} + \lambda_i b_i + \lambda_n b_n
+a_i = \lambda_1 a_1 + ... \lambda_{i-1} a_{i-1}
+$$
+
+$$
+ + \lambda_i b_i + \lambda_n b_n
 $$
 
 A kiindulási feltétel miatt tudjuk, hogy $a_i$ nem áll elő így: $a_i \ne \lambda_1 a_1 + ... \lambda_{i-1} a_{i-1}$ (hiszen lineárisan független), ezért valamelyik b-s együttható biztosan nem nulla.
