@@ -193,7 +193,7 @@ Tehát $\underline{x}_i$ = az eredeti $\underline{\underline{A}}$ mátrix i-edik
 
 $\underline{x} = \underline{\underline{A}}^{-1}\cdot \underline{b}$
 
-<p>A mátrixszorzás szerint $\underline{x}_j$ -edik eleme = ${A^{-1}}_j \cdot b \implies \underline{x}_j = \frac{1}{det(A)} (A_{1j}B_1 + A_{2j}B_2 + …)$</p>
+A mátrixszorzás szerint $\underline{x}\_j$ -edik eleme = ${A^{-1}}\_j \cdot b \implies \underline{x}\_j$ = $\frac{1}{det(A)} (A\\_{1j}B\\_1 + A\\_{2j}B\\_2 + …)$
 
 Ha ebből indultunk volna ki: $ \frac{1}{det(A)}adj(A)\cdot b$, akkor is ugyan ezt kaptuk volna
 
@@ -252,12 +252,12 @@ Legyen $\underline{\underline{A}} := \begin{bmatrix}
 a & b & c\\\\d & e & f\\\\g & h & i
 \end{bmatrix}$
 
-Ekkor ugye $\det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)$
+Ekkor ugye $\det(A) =$ $a(ei - fh) - b(di - fg) + c(dh - eg)$
 
 És $A^{-1}$ kiszámolásának lépései:
 
 1. $B := A^T$
-2. for each i, j: $adj(A)\_{ij} = (-1)^{i+j}det(B\\_{ij})$
+2. for each i, j: $adj(A)\_{ij} = (-1)^{i+j}\det(B\_{ij})$
 3. $A^{-1}$ := $\frac{1}{det(A)} adj(A)$
 
 ### Egyenletrendszer rangja
@@ -534,7 +534,7 @@ Axiómái:
 
 Legyen $c := a-b$
 
-Ekkor $c^2 = (a-b)(a-b) = (a, a) + (b, b) - 2(a, b) =$
+Ekkor $c^2 =$ $(a-b)(a-b) =$ $(a, a) + (b, b) - 2(a, b) =$
 
 $= \vert a \vert^2 + \vert b \vert^2 - 2 \vert a \vert \vert b \vert cos(a, b)$
 
