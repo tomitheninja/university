@@ -257,7 +257,7 @@ Ekkor ugye $\det(A) = a(ei - fh) - b(di - fg) + c(dh - eg)$
 És $A^{-1}$ kiszámolásának lépései:
 
 1. $B := A^T$
-2. for each i, j: $adj(A)_{ij} = (-1)^{i+j}det(B_{ij})$
+2. for each i, j: $adj(A)\_{ij} = (-1)^{i+j}det(B\\_{ij})$
 3. $A^{-1}$ := $\frac{1}{det(A)} adj(A)$
 
 ### Egyenletrendszer rangja
