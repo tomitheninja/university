@@ -640,7 +640,7 @@ Sajátvektor jelentése: Olyan nem nulla vektorok, amelyek párhuzamosak a kép�
 
 ### Sajátérték
 
-Ha $\exist \lambda$, hogy $L(\underline{s}) = \lambda \underline{s}$, akkor $\lambda$ egy sajátérték és $\underline{s}$ a sajátértékhez tartozó sajátvektor.
+Ha $\exists \lambda$, hogy $L(\underline{s}) = \lambda \underline{s}$, akkor $\lambda$ egy sajátérték és $\underline{s}$ a sajátértékhez tartozó sajátvektor.
 
 ### Karakteresztikus akármik
 
