@@ -67,13 +67,16 @@ $$\sum_{j=1}^{n} \underline{\underline{A}}_{ij} \cdot (-1)^{i+j} \cdot \underlin
 
 ##### Értelmezési segédlet
 
-- $\underline{\underline{A}}_{ij} $: A mátrix i-edik sorának j-edik eleme.
+- $\underline{\underline{A}}_{ij}$: A mátrix i-edik sorának j-edik eleme.
 - $(-1)^{i+j} $A sakktábla színezése szerint változó előjel
-- A $\underline{\underline{D}}_{ij} $aldeterminás úgy keletkezik, hogy elhagyjuk a mátrix i-edik sorát és j-edik oszlopát, majd az ennek a minormátrixnak vesszük a determinánsát.
+- A $\underline{\underline{D}}_{ij}$ aldeterminás úgy keletkezik, hogy elhagyjuk a mátrix i-edik sorát és j-edik oszlopát, majd az ennek a minormátrixnak vesszük a determinánsát.
 
 ### Kifejtési tétel
 
-Egy determináns bármely sora vagy oszlopa alapján kifejthető és az eredmény minden esetben ugyan az lesz.
+Egy determináns bármely sora vagy oszlopa alapján kifejthető és az eredmény minden esetben ugyan az lesz:
+
+$$\underline{a}_{1j}\underline{\underline{D}}_{1j} + \underline{a}_{2j}\underline{\underline{D}}_{2j} + ... + \underline{a}_{ij}\underline{\underline{D}}_{nj} = det(\underline{\underline{D}})$$
+
 
 ### Ferde kifejtés (Gauss-os)
 
@@ -171,32 +174,6 @@ $
 
 Látható, hogy $x = 1$, $y = 2$, $z = 3$
 
-### Cramer-szabály
-
-Sokkal gyorsabb, ha az megoldásvektornak csak egy elemét szeretnénk kiszámítani.
-
-Példa $x_2$-re, $\underline{\underline{A}}\cdot \underline{x} = \underline{B}$ esetén:
-
-$$
-\underline{x}_2 = \frac{\begin{vmatrix}
-a & B_1 & c & d\\
-e & B_2 & f & g\\
-h & B_3 & i & j\\
-k & B_4 & l & m
-\end{vmatrix}}
-{det(A)}
-$$
-
-Tehát $\underline{x}_i$ = az eredeti $\underline{\underline{A}}$ mátrix i-edik oszlopába beírt b vektor determinánsa, osztva $\underline{\underline{A}}$ determiánsával.
-
-#### Bizonyítás
-
-$\underline{x} = \underline{\underline{A}}^{-1}\cdot \underline{b}$
-
-A mátrixszorzás szerint $\underline{x}\_j$ -edik eleme = ${A^{-1}}\_j \cdot b \implies \underline{x}\_j$ = $\frac{1}{det(A)} (A\\_{1j}B\\_1 + A\\_{2j}B\\_2 + …)$
-
-Ha ebből indultunk volna ki: $ \frac{1}{det(A)}adj(A)\cdot b$, akkor is ugyan ezt kaptuk volna
-
 ### Inverz mátrixxal
 
 Ha az $\underline{\underline{A}}\cdot \underline{x} = \underline{b}$ egyenletet balról szorozzuk A inverzével, akkor $\underline{x} = \underline{\underline{A}}^{-1}\underline{b}$
@@ -259,6 +236,42 @@ Ekkor ugye $\det(A) =$ $a(ei - fh) - b(di - fg) + c(dh - eg)$
 1. $B := A^T$
 2. for each i, j: $adj(A)\_{ij} = (-1)^{i+j}\det(B\_{ij})$
 3. $A^{-1}$ := $\frac{1}{det(A)} adj(A)$
+
+### Cramer-szabály
+
+Sokkal gyorsabb, ha az megoldásvektornak csak egy elemét szeretnénk kiszámítani.
+
+Csak akkor működik, ha csak egy megoldás létezik ($det = 0$)
+
+Példa $x_2$-re, $\underline{\underline{A}}\cdot \underline{x} = \underline{B}$ esetén:
+
+$$
+\underline{x}_2 = \frac{\begin{vmatrix}
+a & B_1 & c & d\\
+e & B_2 & f & g\\
+h & B_3 & i & j\\
+k & B_4 & l & m
+\end{vmatrix}}
+{det(A)}
+$$
+
+Tehát $\underline{x}_i$ = az eredeti $\underline{\underline{A}}$ mátrix i-edik oszlopába beírt b vektor determinánsa, osztva $\underline{\underline{A}}$ determiánsával.
+
+#### Cramer szabály bizonyítása
+
+Ha $Ax = b$, akkor $A^{-1}b = x$, ahol $A^{-1} = \frac{1}{det(A)}adj(A)$
+
+tehát $x = \frac{1}{det(A)}adj(A)\cdot b$
+
+A bizonyítás maradék része az mátrix adjungálás egyenletrendezéséből jön.
+
+Ha fogjuk csak azokat az almátrixokat, amelyek beleszámítanak majd a $x_j$ értékébe és ezeket komponensenként szorozzuk a b vektorral, akkor meg is kaptuk az eredményt.
+
+A Cramer-szabály lényege pont az, hogy nem kell az összes almátrix determinánsát kiszámolni, csak a szükségeseket.
+
+Ha a végső alakra szeretnénk rendezni a fenti egyenletet, akkor észrevehetjük, hogy az adjungálás első lépésben transzponáltuk a mátrixok, majd a j-edik oszlop szerinti determinánsok értékét vettük. A komponensenkénti szorzást be lehet vinni a mátrixba, mivel az aldeterminánsok kifejtésénél nem az adott elemmel, hanem mindig 1-el szorzunk, így ezt a helyet fel tudjuk használni arra, hogy már itt beszorozzunk b-vel.
+
+Továbbá a szorzások csoportosításával vissza lehet írni az egyenletet determinánsos alakra, így csökkentve a redundanciát, de ennek bizonyítását max. vissza felé próbálnám meg. egyenlet => determináns helyett determináns => egyenlet.
 
 ### Egyenletrendszer rangja
 
@@ -345,6 +358,8 @@ Ha $w$ elemeire is teljesül a 11 axióma (tehát $w$ is vektorteret alkot), akk
 
 ### Lineáris kombináció
 
+Vektorok és skalárok komponensenkénti szorzatának összege.
+
 Minden vektorhoz egy együtthatót rendelünk, majd vesszük ezek összegét:
 
 $\lambda_1 a + \lambda_2 b + \lambda_3 c + ... \lambda_n v_n$
@@ -397,6 +412,8 @@ Ekkor $\alpha$ és $\beta$ számokat koordinátának nevezzük.
 
 ### Elemi bázistranszformáció
 
+*Hogyan lehet egy bázisból egyetlen elem megváltoztatásával egy másik bázist kapni?*
+
 Tegyük fel, hogy az $a_1$, $a_2$, ..., $a_n$ vektorok bázist alkotnak V vektortér felett.
 
 Legyen $v := \lambda_1 a_1 +$ $\lambda_2 a_2$ $+ ... + \lambda_n a_n$
@@ -407,7 +424,7 @@ $a_1, a_2, ..., a_{i-1}, v, a_{i+1}$ $, ..., a_n$ is bázisa a térnek.
 
 (Az eredetiben kicserélve $a_i$-t, $v$-re)
 
-#### Bizonyítás: generátorrendszer
+#### Bizonyítás: Az új bázis generátorrendszer
 
 Az eredeti $a_i$ vektor kifejezhető így:
 
@@ -432,7 +449,7 @@ $$
  \sum_{j \ne i} (\xi_j - \xi_i \frac{\lambda_j}{\lambda_i})a_j + \frac{\xi_i}{\lambda_i} v
 $$
 
-#### Bizonyítás: független (indirekten)
+#### Bizonyítás: Az új bázis független (indirekten)
 
 azért van rá szükség, mert ha generátorrendszer és független akkor bázis.
 
@@ -444,7 +461,7 @@ $$
 v = 0 a_i - \sum_{j \ne i} \frac{\lambda_j a_j}{\lambda_i}
 $$
 
-és ez valamiért ellentmondás.
+és ez valamiért ellentmondás (meg egyben a matekinges képlet is).
 
 saját értelmezés: ugye akkor összefüggő, ha nem minden $\lambda = 0$ és mégis előáll a nullvektor. v a kiindulási feltétel miatt nem lehet nulla, ezért nem minden együttható nulla. Szerintem v-t átvíve az egyenlet jobb oldalára ezt kapjuk.
 
