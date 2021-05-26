@@ -653,6 +653,8 @@ $L(\lambda a) = \lambda L(a)$
 
 Melyek azok a vektorok, amelyeket a nullvektorba képez $L$?
 
+Side note: $\underline{\underline{A}} \cdot \underline{x} = \underline{b}$ egyenletrendszer megoldásai a magtér elemei.
+
 ### Képtér (Image)
 
 Melyek azok a vektorok, amelyeket **NEM** a nullvektorba képez $L$?
@@ -663,7 +665,37 @@ $$ dim(Ker) + dim(Im) = dim(V)$$
 
 #### Dimenzió tétel bizonyítása
 
-esélytelen
+A magtérről könnyen belátható, hogy részhalmaz a térben, mivel tartalmazza a $\underline{0}$ vektort.
+
+Beláthatjuk továbbá, hogy a képtér is egy altér, mivel a leképezés homogén lineáris.
+
+Vegyük $ker(A)$ egy tetszőleges bázisát: $\{\underline{b}_1, ..., \underline{b}_k\}$
+
+Ezt kibővíthetjük a $C = \{\underline{c}_1, ... \underline{c}_t\}$ vektorokkal V bázisává.
+
+Ekkor az a feltevésünk, hogy C elemeinek képei $Im(A)$ bázisát fogja adni, azaz hogy $\{\underline{\underline{A}}\cdot\underline{c}_1, \underline{\underline{A}}\cdot\underline{c}_2, ..., \underline{\underline{A}}\cdot\underline{c}_t\} = Im(A)$ és ebből már  következne az, hogy $Im(A)$ dimenziója t.
+
+##### Im(A) generátorrendszere
+
+Legyen u tetszőleges eleme a képtérnek, így V-nek is.
+
+Ekkor $\underline{u} := \alpha_1\underline{b}_1 + ... + \alpha_k\underline{b}_k$ $+ \beta_1\underline{c}_1 + ... \beta_t\underline{c}_t$
+
+De a $\underline{b}$ vektorok a magtér elemei, tehát $\underline{0}$-ba képződnek, ezért vehetünk belőlük nullát.
+
+Ez viszont azt jelenti, hogy azok nélkül is kifejezhető a tetszőleges $\underline{u}$ vektor, tehát $\{\underline{b}, \underline{c}\}$ generátorrendszer.
+
+##### Független
+
+Tegyük fel, hogy van olyan $\vec{v}$, hogy $\underline{\underline{A}}\underline{c} \cdot \underline{v} = 0$ (Ac = Im(A)), mivel $\underline{\underline{A}}$ nem nulla, azzal egyszerűsíthetünk.
+
+Ezt azt jelenti, hogy az $\underline{u} = \underline{v}_1\underline{c}_1 + ... + \underline{v}_t\underline{c}_t$ kell hogy nullába képződjön, így eleme a magtérnek.
+
+Ha eleme a magtérnek, akkor a másik bázis elemeivel is előállítható. Egy csak úgy lehetséges, ha $\underline{u} = \underline{0}$
+
+Tehát a két bázis egymástól független.
+
+http://wiki.math.bme.hu/view/Dimenzi%C3%B3t%C3%A9tel
 
 #### Transzformáció
 
