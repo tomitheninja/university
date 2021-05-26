@@ -59,11 +59,11 @@ $\begin{bmatrix}
 a & b\\\\c & d
 \end{bmatrix} $mátrix determinánsa = $ad - bc $
 
-#### Nagyobb mátrix determinánsa
+#### Kifejtési tétel
 
 tetszőleges $1 \le i \le n$ esetén:
 
-$$\sum_{j=1}^{n} \underline{\underline{A}}_{ij} \cdot (-1)^{i+j} \cdot \underline{\underline{D}}_{ij} $$
+$$det(A) = \sum_{j=1}^{n} \underline{\underline{A}}_{ij} \cdot (-1)^{i+j} \cdot \underline{\underline{D}}_{ij}$$
 
 ##### Értelmezési segédlet
 
@@ -75,10 +75,17 @@ $$\sum_{j=1}^{n} \underline{\underline{A}}_{ij} \cdot (-1)^{i+j} \cdot \underlin
 
 Egy determináns bármely sora vagy oszlopa alapján kifejthető és az eredmény minden esetben ugyan az lesz:
 
-$$\underline{a}_{1j}\underline{\underline{D}}_{1j} + \underline{a}_{2j}\underline{\underline{D}}_{2j} + ... + \underline{a}_{ij}\underline{\underline{D}}_{nj} = det(\underline{\underline{D}})$$
+$$det(A) = \sum_{j=1}^{n} (-1)^{i+j} det(A_{ij})$$
 
+### Ferde kifejtés
 
-### Ferde kifejtés (Gauss-os)
+Azt mondja ki, hogy azok a tagok, ahol a $A_{ij}$-t nem a saját sorából vett aldeterminánssal szorozzuk mind nullák.
+
+$$\sum_{j=1}^n a_{ij}A_{kj} = 0, i \ne k$$
+
+Úgy lehet bizonyítani, hogy a k-adik sorba beírjuk az i-edik sort és ekkor a mátrix determinánsa nyílván nulla.
+
+### Kifejtés Gauss eleminációval
 
 Előnye, hogy sokkal kevesebb számítást igényel nagyobb (3x3, 4x4) mátrixok esetén
 
@@ -269,7 +276,8 @@ Ha fogjuk csak azokat az almátrixokat, amelyek beleszámítanak majd a $x_j$ é
 
 A Cramer-szabály lényege pont az, hogy nem kell az összes almátrix determinánsát kiszámolni, csak a szükségeseket.
 
-Ha a végső alakra szeretnénk rendezni a fenti egyenletet, akkor észrevehetjük, hogy az adjungálás első lépésben transzponáltuk a mátrixok, majd a j-edik oszlop szerinti determinánsok értékét vettük. A komponensenkénti szorzást be lehet vinni a mátrixba, mivel az aldeterminánsok kifejtésénél nem az adott elemmel, hanem mindig 1-el szorzunk, így ezt a helyet fel tudjuk használni arra, hogy már itt beszorozzunk b-vel.
+Ha a végső alakra szeretnénk rendezni a fenti egyenletet, akkor észrevehetjük, hogy az adjungálás első lépésben transzponáltuk a mátrixot, majd a **j-edik oszlop szerinti** determinánsok értékét vettük.
+A komponensenkénti szorzást be lehet vinni a mátrixba, mivel az aldeterminánsok kifejtésénél (az adjungálás második lépésénél) nem az adott elemmel, hanem mindig 1-el szorzunk, így ezt a helyet fel tudjuk használni arra, hogy már itt beszorozzunk b-vel.
 
 Továbbá a szorzások csoportosításával vissza lehet írni az egyenletet determinánsos alakra, így csökkentve a redundanciát, de ennek bizonyítását max. vissza felé próbálnám meg. egyenlet => determináns helyett determináns => egyenlet.
 
@@ -398,6 +406,17 @@ Ekkor azt mondjuk, hogy $a_1$, $a_2$, ..., $a_n$ generátorrendszert alkot V-ben
 
 Egy lineárisan független generátorrendszer. Azért jó, mert egyértelműen állítja elő a vektortér elemeit.
 
+#### Bizonyítás: egyértelmű előállítás
+
+Tegyük fel, hogy $\alpha_1, \alpha_2, ... \alpha_n$ és $\beta_1, \beta_2, ... \beta_n$ együtthatókkal is előállítható a $\underline{v}$ vektor.
+
+Ekkor $$v = \alpha_1\underline{v}_1 + \alpha_2\underline{v}_2+ ...$$
+$$v = \beta_1\underline{v}_1 + \alpha_2\underline{v}_2 + ...$$
+
+Egymásból kivonva őket: $$\underline{0} = (\alpha_1 - \beta_1)\underline{v}_1 + ...$$
+
+Ez azonban az jelentené, hogy a bázis nem nulla együtthatókkal is elő tudja állítani a null vektort, tehát összefüggő, viszont akkor nem lenne bázis.
+
 #### Bázis elemszáma
 
 pontosan annyi, ahány mint a lineárisan független vektorok maximális száma $V$-ben.
@@ -482,15 +501,13 @@ Adott $g_1, g_2, ..., g_n$ generátorrendszer és $b_1, b_2, ..., b_n$ bázis.
 
 Ekkor bármely $b_i$ helyettesíthető valamely $g_j$-vel, úgy, hogy $b_1, b_2, b_{i-1}, g_j, b_{i+1}, ..., b_n$ is bázis (független és generátor rendszer) lesz.
 
-#### Indirekt bizonyítás: Nem lesz összefüggő
+#### Indirekt bizonyítás: nem lesz összefüggő
 
 Tegyük fel, hogy összefüggő rendszer kapunk, például $b_1$ és $g_j$ cseréje esetén.
 
-Tehát $b_2, b_3, ..., b_n$ elő tudja állítani a tetszőleges (bármely) $g_j$-t, tehát nem csak független, hanem generátorrendszer is.
+Ezt azt jelenti, hogy $b_2, b_3, ..., b_n$ magában független (csak elhagytunk egy vektort) és elő tudja állítani a tetszőleges (bármely) $g_j$-t (hiszen nem találtunk olyat, amit nem), tehát  generátorrendszer is. Ha független és generátorrendszer is, akkor bázis.
 
-Azonban ha $b_2, b_3, ..., b_n$ tényleg bázis lenne, akkor elő tudná $b_1$-et is, de a kiindulási feltétel szerint $b$ egy független rendszer.
-
-EPIC FAIL
+Azonban ha $b_2, b_3, ..., b_n$ tényleg bázis lenne, akkor elő tudná állítani az eredeti $b_1$-et is, de a kiindulási feltétel szerint $b$ egy független rendszer.
 
 #### Minden vektor kicserélése
 
@@ -499,11 +516,11 @@ A kezdeti feltételek újra teljesülnek, így újra lecserélhetünk egy vektor
 Így az összes vektort le tudjuk cserélni.
 ### Dimenzió
 
+Definíció: dimenzió: legnagyobb bázis elemszáma
+
 A V vektortér n dimenziós, ha tartalmaz n elemű bázist.
 
-Magyarul: dimenzió: legnagyobb bázis elemszáma
-
-Definíció szerint ha $V = \{\underline{0}\}$, akkor $dim(V) = 0$
+Mivel $\{\underline{0}\}$ lineárisan összefüggő, ezért nincsen bázisa. Emiatt dimenziója def. alapján nulla.
 
 #### Véges dimenzió (példák)
 
@@ -572,7 +589,7 @@ $\underline{c}$ irányából nézve, $\underline{b}$-t az óramutató járásán
 
 Geometrikai jelentés: paralelogramma területe
 
-$\vec{a}\times\vec{b} = \vert a \vert\vert b \vert \sin(a,b)e$, ahol $\underline{e}$ egy $\underline{a}$-ra és $\underline{b}$-re is merőleges vektor és \{$\underline{a}$, $\underline{b}$, $\underline{e}$\} jobbrendszert alkot.
+$\vec{a}\times\vec{b} = \vert \underline{a} \vert\vert \underline{b} \vert \sin(a,b)\underline{e}$, ahol $\underline{e}$ egy $\underline{a}$-ra és $\underline{b}$-re is merőleges vektor és \{$\underline{a}$, $\underline{b}$, $\underline{e}$\} jobbrendszert alkotnak.
 
 #### Párhuzamosság vol. 2
 
@@ -687,8 +704,10 @@ A $\lambda$ sajátérték geometriai multiplicitása = hozzá tartozó függetle
 
 ### Síkbeli felbontás
 
-Ha adott a síkban két nem párhuzamos vektor, $\underline{a}$ és $\underline{b}$, akkor minden $\underline{c}$ síkbeli vektor
-felbontható $\underline{a}$ és $\underline{b}$ vektorokkal párhuzamos összetevőkre:
+Legyen adott a síkon két egymással nem párhuzamos vektor,
+melyeket bázisvektoroknak nevezünk. Ekkor a sík bármely vektora
+egyértelműen (csak egyféleképpen) felbontható a bázisvektorokkal
+párhuzamos összetevőkre.
 
 $$ c = \alpha \underline{a} + \beta \underline{b} $$
 
@@ -702,6 +721,11 @@ Adott a térben $\underline{a}$, $\underline{b}$ $\underline{c}$, páronként ne
 
 Ekkor a $\underline{d} = \alpha \underline{a} + \beta \underline{b} + \gamma \underline{c}$ felbontás egyértelmű
 
+#### Bizonyítás
+
+Síkokkal egy parallelepipedont kell köré szerkeszteni.
+
+Lásd: Bérces né diáin
 ### Kicserélési tétel más könyvben
 
 Az az $a_1$, $a_2$, ... $a_n$ rendszer lineárisan független, akkor a $b_1$, $b_2$, ..., $b_m$ bázisból k számú vektort az $a_1$, $a_2$, ..., $a_n$ vektorokkal helyettesítve ismét a tér bázisát kapjuk.
@@ -720,10 +744,24 @@ $$
 a_i = \lambda_1 a_1 + ... \lambda_{i-1} a_{i-1}
 $$
 
-$$
- + \lambda_i b_i + \lambda_n b_n
-$$
+$$+ \lambda_i b_i + \lambda_n b_n$$
 
 A kiindulási feltétel miatt tudjuk, hogy $a_i$ nem áll elő így: $a_i \ne \lambda_1 a_1 + ... \lambda_{i-1} a_{i-1}$ (hiszen lineárisan független), ezért valamelyik b-s együttható biztosan nem nulla.
 
 Mivel ugyan annyi vektorunk van mint az eredeti bázisban és ezek továbbra is függetlenek, ezért ez egy bázis.
+
+### Sík normálvektoros egyenlete
+
+$$\vec{n}\cdot \vec{P_0P}= 0$$
+
+$$\vec{n}\cdot (P-P_0)= 0$$
+
+a komponensenkénti való szorzást elvégezve:
+
+Továbbá legyen $n=(A, B, C)$
+
+$$ A(P-P_0) + ... = 0 $$
+
+ezt rendezve:
+
+$$Ax + By + Cz = D$$
