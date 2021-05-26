@@ -721,7 +721,7 @@ Ha $\exists \lambda$, hogy $L(\underline{s}) = \lambda \underline{s}$, akkor $\l
 
 for each $\lambda$ where $\det(\underline{\underline{A}} - \lambda \underline{\underline{E}}) = 0$:
 
-- $(\underline{\underline{A}} - \lambda \underline{\underline{E}}) \cdot x = \underline{0}$, milyen x-re?
+- $(\underline{\underline{A}} - \lambda \underline{\underline{E}}) \cdot \underline{x} = \underline{0}$, milyen x-re?
 - Sajátvektor az előző x bármely (nem nulla) számszorosa is
 
 ### Algebrai multiplicitás
@@ -741,7 +741,7 @@ melyeket bázisvektoroknak nevezünk. Ekkor a sík bármely vektora
 egyértelműen (csak egyféleképpen) felbontható a bázisvektorokkal
 párhuzamos összetevőkre.
 
-$$ c = \alpha \underline{a} + \beta \underline{b} $$
+$$ \underline{c} = \alpha \underline{a} + \beta \underline{b} $$
 
 #### Bizonyítás: A felbontás egyértelmű
 
