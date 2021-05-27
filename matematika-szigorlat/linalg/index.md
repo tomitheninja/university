@@ -514,6 +514,7 @@ Azonban ha $b_2, b_3, ..., b_n$ tényleg bázis lenne, akkor elő tudná állít
 Láthattuk, hogy ha kicserélünk egy vektort, akkor bázis marad az új rendszer.
 A kezdeti feltételek újra teljesülnek, így újra lecserélhetünk egy vektort.
 Így az összes vektort le tudjuk cserélni.
+
 ### Dimenzió
 
 Definíció: dimenzió: legnagyobb bázis elemszáma
@@ -732,6 +733,10 @@ A $\lambda$ sajátérték algebrai multiplicitása = hanyadik hatványon van a k
 
 A $\lambda$ sajátérték geometriai multiplicitása = hozzá tartozó független sajátvektorok száma
 
+### Lineáris leképzés mátrixa
+
+TODO
+
 ## Egyéb tételek
 
 ### Síkbeli felbontás
@@ -757,7 +762,8 @@ Ekkor a $\underline{d} = \alpha \underline{a} + \beta \underline{b} + \gamma \un
 
 Síkokkal egy parallelepipedont kell köré szerkeszteni.
 
-Lásd: Bérces né diáin
+Lásd: Előadás diákon
+
 ### Kicserélési tétel más könyvben
 
 Az az $a_1$, $a_2$, ... $a_n$ rendszer lineárisan független, akkor a $b_1$, $b_2$, ..., $b_m$ bázisból k számú vektort az $a_1$, $a_2$, ..., $a_n$ vektorokkal helyettesítve ismét a tér bázisát kapjuk.
