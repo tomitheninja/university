@@ -735,7 +735,68 @@ A $\lambda$ sajátérték geometriai multiplicitása = hozzá tartozó függetle
 
 ### Lineáris leképzés mátrixa
 
+Az első dolog, amit észre kell venni, hogy a bázisok megváltoztatása, mivel azokból vane előállítva a lineáris kombináció, ezért a megváltoztatásuk magával "rántja" a kifejezett vektort is.
+
+Matekosan kifejezve: Lineáris transzformáció megadásához elegendő a bázisok ($\underline{e}$) képeit megadni.
+
+Ekkor azt a mátrixok, amelynek oszlopai a bázisok képeit tartalmazzák a lineáris transzformáció mátrixának nevezzük.
+
+$$\underline{a}_j := L(\underline{e_i}) = \sum_{i=1}^{n}\underline{a}_{ij}\underline{e}_i$$
+
+$$\underline{\underline{A}} := \left[\underline{a}_1, ..., \underline{a}_n\right]$$
+
+$$L(\underline{x}) = \underline{\underline{A}}\cdot\underline{x}$$
+
+#### lineáris leképzés mátrixának bizonyítása
+
+A leképzés komponensenként (lin-homogenitás miatt ok): $$L(\underline{x}) = \sum_{j=1}^{n} \underline{x}_i L(\underline{e}_i)$$
+
 TODO
+
+
+### Áttérés másik bázisra (SAS)
+
+Legyenek $\underline{e}_1, ..., \underline{e}_n$ és $\underline{f}_1, ..., \underline{f}_n$ bázisok V vektortér felett, továbbá legyen $S$ az áttérés mátrixa.
+
+Fontos, hogy ugyan az kiindulási és érkezési vektortér.
+
+$$\underline{f}_j = \sum_{i=1}^{n} \underline{c}_{ij}\underline{e}_i$$
+
+Ha $L$ lináris transzformáció mátrixa az $e$ bázisban A, az $f$ bázisban pedig $[A]_f$, akkor
+
+$$[A]_f = S^{-1}AS$$
+
+#### SAS bizonyítása
+
+TODO
+
+### Áttérés új bázisra (TAS)
+
+Legyenek $\underline{e}_1, ..., \underline{e}_n \in V_1$ és $\underline{f}_1, ..., \underline{f}_n \in V_2$, továbbá legyenek $S \in V1$ és $T \in V2$ az áttérés mátrixai.
+
+$$[A]_f = T^{-1}AS$$
+
+#### TAS bizonyítása
+
+TODO
+
+### Sajátvektorok bázisa
+
+1. Minden sajátvektorhoz csak egy sajátérték tartozik
+2. Minden $\lambda$-hoz tartozó összes sajátvektor és $\underline{0}$ alteret alkotnak.
+
+#### Bizonyítás: sajátérték egyértelmű
+
+Tfh. hogy létezik egy $\mu$ sajátérték is.
+
+Ekkor $\underline{\underline{A}}\underline{v} = \lambda\underline{v} = \mu\underline{v}$
+
+Mivel $\underline{v} \ne \underline{0}$, ezért $\lambda = \mu$
+
+#### Bizonyítás: alteret alkotnak
+
+Linearitás: $\underline{\underline{A}}(\underline{v} + \underline{z}) = \lambda(\underline{v} + \underline{z})$
+Homogenitás: $A(c\underline{v}) = \lambda(c\underline{v})$
 
 ## Egyéb tételek
 
