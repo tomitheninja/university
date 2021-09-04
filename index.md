@@ -4,13 +4,13 @@ title: "jegyzetek"
 
 ## 🏁 Szigorlatok
 
-- ### [Matematika szigorlat](./matematika-szigorlat)
+- ### [PPKE Matematika szigorlat](./ppke-matek)
 
 ## 📖 Szemeszterek
 
-- ### [PPKE-ITK 1. félév](./szemeszter-1)
+- ### [PPKE-ITK 1. félév](./ppke-1)
 
-- ### [PPKE-ITK 2. félév](./szemeszter-2)
+- ### [PPKE-ITK 2. félév](./ppke-2)
 
 ## 👪 Hasonló projektek
 
