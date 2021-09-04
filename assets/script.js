@@ -16,7 +16,7 @@ if (prevTheme) {
 
 // generate table of contents
 const main = document.getElementById('main_content')
-if (main.children.length > 100)
+if (main.children.length > 50)
 {
   const arr = []
   for(let i = 0; i < main.children.length; i++)
