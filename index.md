@@ -12,6 +12,8 @@ title: "jegyzetek"
 
 - ### [PPKE-ITK 2. félév](./ppke-2)
 
+- ### [SZTE 1. félév](./szte-1)
+
 ## 👪 Hasonló projektek
 
 - ### [OSSU/computer-science](https://github.com/ossu/computer-science)
