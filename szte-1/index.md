@@ -9,3 +9,7 @@
 ## Alga1
 
 - [gyakorlat](./alga1/gyak.md)
+
+## Kalkulus II
+
+- [gyakorlat](./kalk2/gyak.md)
