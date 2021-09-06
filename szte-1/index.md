@@ -5,3 +5,7 @@
 ## Adatbázisok
 
 - [gyakorlat](./adatb/gyak)
+
+## Alga1
+
+- [gyakorlat](./alga1/gyak.md)
