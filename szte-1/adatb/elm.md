@@ -1,0 +1,4 @@
+# Adatbázis elmélet
+
+> menekülj
+
