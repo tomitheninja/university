@@ -90,3 +90,8 @@ function keres(arr: number[], x, left, right) {
   - átlagos: $\frac{n+1+2n}{2} = \frac{3n + 1}{2}$
 - tárterület igény
   - $\frac{\sum_{i=1}^{n} (n+i)}{n}$
+
+### Absztrakt példa
+
+```js
+```

@@ -20,7 +20,3 @@ title: "jegyzetek"
 - ### [OSSU/bioinformatics](https://github.com/ossu/bioinformatics)
 - ### [YouTube playlist](https://laconicml.com/computer-science-curriculum-youtube-videos/)
 - ### [Awesome-Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)
-
-## Edit this project
-
-https://github.dev/tomitheninja/university
