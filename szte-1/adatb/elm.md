@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Adatbázisok elmélet
 
 ## Az adatok típusa
