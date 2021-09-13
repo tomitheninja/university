@@ -110,5 +110,5 @@ $$
 ### Nagyságrend (theta)
 
 $$
-f(x) = \matcal{O}(g(n))
+f(x) = \mathcal{O}(g(n)), f(x) = \Omega(g(n))
 $$
