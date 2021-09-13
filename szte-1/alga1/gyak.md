@@ -1,5 +1,7 @@
 # Algoritmusok I
 
+- [gyakvez jegyzete](https://github.com/dhirling/alga1)
+
 - Gelle Kitti jegyzete
 
 ## Követelmények
@@ -91,7 +93,22 @@ function keres(arr: number[], x, left, right) {
 - tárterület igény
   - $\frac{\sum_{i=1}^{n} (n+i)}{n}$
 
-### Absztrakt példa
+## Nagy O jelölések
 
-```js
-```
+### Legjobb eset = alsó korlát (omega)
+
+$$
+\Omega(g(n)) = \left\{f(n), \exists c, n_0, \forall n_0 \le n, f(n) \ge C\cdot g(n) \right\}
+$$
+
+### Legrosszabb eset (ordó)
+
+$$
+\mathcal{O}(g(n)) = \left\{f(n), \exists c, n_0, \forall n_0 \le n, f(n) \le C\cdot g(n) \right\}
+$$
+
+### Nagyságrend (theta)
+
+$$
+f(x) = \matcal{O}(g(n))
+$$
