@@ -85,7 +85,7 @@ várt alak: $f(y)\cdot y' = g(x)$
     - $g(x) = \frac{1}{x(x+1)}$
 3. $\frac{1}{y} \frac{dy}{dx}$ = $\frac{1}{x(x+1)}$ // átszorzás dx-el
 4. $\frac{1}{y} dy$ = $\frac{1}{x(x+1)} dx$ // integrálás oldalonként
-5. $ln|y| + C_1$ = $\int (\frac{A}{x} + \frac{B}{x+1})$, $C_1 \in R$
+5. $ln|y| + C_1$ = $\int(\frac{A}{x} + \frac{B}{x+1})$, $C_1 \in R$
     - most: parciális törtekre bontás
     - $1 = A(x+1) + B(x)$
     - $x=-1 \to$ $1 = B(-1) \to$ $B=-1$
