@@ -85,18 +85,18 @@ várt alak: $f(y)\cdot y' = g(x)$
     - $g(x) = \frac{1}{x(x+1)}$
 3. $\frac{1}{y} \frac{dy}{dx}$ = $\frac{1}{x(x+1)}$ // átszorzás dx-el
 4. $\frac{1}{y} dy$ = $\frac{1}{x(x+1)} dx$ // integrálás oldalonként
-5. $ ln\left|y\right| + C_1$ = $\int(\frac{A}{x} + \frac{B}{x+1})$, $C_1 \in R$
+5. $ ln\left\vert y\right\vert  + C_1$ = $\int(\frac{A}{x} + \frac{B}{x+1})$, $C_1 \in R$
     - most: parciális törtekre bontás
     - $1 = A(x+1) + B(x)$
     - $x=-1 \to$ $1 = B(-1) \to$ $B=-1$
     - $x=0  \to$ $1 = A(1) \to$ $A=1$
-6. $ln|y| + C_1$ = $ln|x| - ln|x+1| + C_2$, $C_2 \in R$
+6. $ln\vert y\vert  + C_1$ = $ln\vert x\vert  - ln\vert x+1\vert  + C_2$, $C_2 \in R$
     - ennek a neve: implicit megoldás
-7. $ln|y|$ = $ln\left|\frac{x}{x+1}\right| + C$, $C = C_2 - C_1$
+7. $ln\vert y\vert $ = $ln\left\vert \frac{x}{x+1}\right\vert  + C$, $C = C_2 - C_1$
     - legyen minden logaritmus alakban
-8. $ln|y|$ = $ln\left|\frac{x}{x+1}\right| + ln(C)$, $C > 0$
-9. $ln|y|$ = $ln(c\cdot\left|\frac{x}{x+1}\right|)$, mivel ln sz.m.
-10. $|y| = c\left|\frac{x}{x+1}\right|$
+8. $ln\vert y\vert $ = $ln\left\vert \frac{x}{x+1}\right\vert  + ln(C)$, $C > 0$
+9. $ln\vert y\vert $ = $ln(c\cdot\left\vert \frac{x}{x+1}\right\vert )$, mivel ln sz.m.
+10. $\vert y\vert  = c\left\vert \frac{x}{x+1}\right\vert $
 11. y = $+/- c\left(\frac{x}{x+1}\right)$
     - ez az explicit megoldás, y ki van fejezve
 12. Ha $c = 0$, mint a 8. pontban
