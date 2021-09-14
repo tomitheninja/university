@@ -85,7 +85,7 @@ várt alak: $f(y)\cdot y' = g(x)$
 4. $\frac{1}{y} dy$ = $\frac{1}{x(x+1)} dx$ // integrálás oldalonként
 5. $ln|y| + C_1$ = $\int (\frac{A}{x} + \frac{B}{x+1})$, $C_1 \in R$
     - most: parciális törtekre bontás
-    - $1 = A(x+1) + B(x)
+    - $1 = A(x+1) + B(x)$
     - $x=-1 \to$ $1 = B(-1) \to$ $B=-1$
     - $x=0  \to$ $1 = A(1) \to$ $A=1$
 6. $ln|y| + C_1$ = $ln|x| - ln|x+1| + C_2$, $C_2 \in R$
