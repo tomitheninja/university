@@ -112,3 +112,96 @@ $$
 $$
 f(x) = \mathcal{O}(g(n)), f(x) = \Omega(g(n))
 $$
+
+## Algoritmusok
+
+### Lineáris keresés
+
+```java
+public static int seach(int key, int[] a) {
+  for (int i = 0; i < a.length; i++)
+    if ( a[i] == key ) return i;
+  return −1;
+}
+```
+
+#### Időigény
+|  min. | max.  | avg.  |
+| --- | --- | --- |
+|  1 | n  | (1+n)/2  |
+
+### Logaritmikus keresés
+
+```java
+public static int seach(int key, int[] a) {
+  int l = 0, r = arr.length − 1;
+  while ( l <= r ) {
+    int m = l + ( r−l ) / 2 ;
+    if ( arr[m] == x ) return m;
+    if ( arr[m] < x ) l = m + 1;
+    else
+      r = m − 1 ;
+  }
+  return −1;
+}
+```
+
+### Faktoriális
+
+```java
+public static int factorial(int n) {
+  if ( n <= 1 ) return 1;
+  return n * factorial(n-1);
+}
+```
+
+### Lépcső mászás
+
+n lépcső, léphetünk 1-et vagy 2-őt
+
+```c
+int P( int n ){
+  if ( n == 1 )
+    return 1;
+  else if ( n == 2 )
+    return 2;
+  else
+    return P(n−1) + P(n−2);
+}
+```
+
+### Utazás sakktábla sarkai között
+
+k sor, n oszlop nagyságú sakktábla bal alsó sarkából a jobb felsőbe.
+
+```c++
+int R( int n , int k ){
+  if (( n == 1 ) or ( k == 1 ))
+    return 1 ;
+  else
+    return R(n−1, k) + R(n, k−1);
+}
+```
+
+
+### Mergesort
+
+```python
+def merge_sort(A, n):
+  if len(A) == n:
+    return A
+  A1 = mergesort(A[1:n/2])
+  A2 = mergesort(A[n/2+1:-1])
+  return merge(A1, A2)
+
+def merge(A1, A2):
+  A = []
+  while not empty(A1) and not empty(A2):
+    smaller = min(first(A1), first(A2))
+	A.push(smaller)
+	if smaller == first(A1):
+	  A1.remove_at(0)
+	else:
+	  A2.remove_at(0)
+  return list(A, A1, A2) # Everything from A + the remaining items from the non empty array
+```
