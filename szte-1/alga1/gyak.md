@@ -2,7 +2,7 @@
 
 - [gyakvez jegyzete](https://github.com/dhirling/alga1)
 
-- Gelle Kitti jegyzete
+- [Gelle Kitti jegyzete](https://www.inf.u-szeged.hu/~kgelle/?q=alga)
 
 ## Követelmények
 
