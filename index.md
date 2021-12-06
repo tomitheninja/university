@@ -2,6 +2,8 @@
 title: "jegyzetek"
 ---
 
+[asdsadsa](./index_full.html)
+
 ## 🏁 Szigorlatok
 
 - ### [PPKE Matematika szigorlat](./ppke-matek)
