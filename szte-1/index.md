@@ -13,3 +13,7 @@
 ## Kalkulus II
 
 - [gyakorlat](./kalk2/gyak.md)
+
+## Csillagászat
+
+- [összesített](./csillag.html)
