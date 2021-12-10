@@ -2,17 +2,15 @@
 title: "jegyzetek"
 ---
 
-## 🏁 Szigorlatok
-
-- ### [PPKE Matematika szigorlat](./ppke-matek)
-
 ## 📖 Szemeszterek
 
 - ### [PPKE-ITK 1. félév](./ppke-1)
 
 - ### [PPKE-ITK 2. félév](./ppke-2)
 
-- ### [SZTE 1. félév](./szte-1)
+- ### [PPKE Matematika szigorlat](./ppke-matek)
+
+- ### [Szeged](./szte)
 
 ## 👪 Hasonló projektek
 
