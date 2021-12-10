@@ -1,6 +1,8 @@
 # SZTE I. szemeszter
 
-## [Halozatok](./halozatok)
+## [Halozatok]
+
+- [kérdésbank](./halozatok/index.html)
 
 ## Adatbázisok
 
