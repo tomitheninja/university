@@ -17,3 +17,7 @@
 ## Csillagászat
 
 - [összesített](./csillag.html)
+
+# SZTE II. szemeszter
+
+## [opencv](./opencv)
