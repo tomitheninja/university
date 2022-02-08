@@ -1,10 +1,12 @@
+# Operáció kutatás
+
 # Pizzák
 
-milyen | Sajtos | Ananászos | db
----|---|--- |---
-Sonka | 8 | 10 | 48
-Sajt | 5 | 1 | 20
-Ananász | | 2 | 8
+| milyen  | Sajtos | Ananászos | db  |
+| ------- | ------ | --------- | --- |
+| Sonka   | 8      | 10        | 48  |
+| Sajt    | 5      | 1         | 20  |
+| Ananász |        | 2         | 8   |
 
 Előfeltétel: $\not\exists$ negatív pizza: $X >= 0$
 
@@ -22,17 +24,18 @@ Módszer: Pizzák visszabontása
 
 $X_{s,a} \ge 0$
 
-$8X_s + 10X_A \le 48$ 
+$8X_s + 10X_A \le 48$
 
-$5X_s + A_x \le 20$ 
+$5X_s + A_x \le 20$
 
-$2X_a \le 8$ 
+$2X_a \le 8$
 
 $\frac{Ax \le b}{c^Tb \to max}$
 
 <img src="https://i.imgur.com/O7lTgyb.png">
 
 #### jelmagyarázat
+
 - kék, fekete egyenesek által határolt területek: megoldásokat tartalmazó poliéder
 - piros egyenesek: a poliéder csúcsai, amelyek a lehetséges optimális megoldások
 - legjobb megoldás: $max(piros egyenesek)$
