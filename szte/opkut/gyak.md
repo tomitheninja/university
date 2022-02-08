@@ -76,7 +76,7 @@ $Z(X) = 0 + X_1 + X_2 \to max$
 
 #### Lehetséges megoldás
 
-$X = \begin{array} {|c|c|c|c|c|}\hline X_1 & X_2 & X_3 & X_4 & X_5 \\ \hline  \end{array}$ = $\begin{array} {|c|c|c|c|c|}\hline 0 & 0 & 48 & 20 & 8 \\ \hline  \end{array}$
+$ X = \begin{array} {|c|c|c|c|c|}\hline X_1 & X_2 & X_3 & X_4 & X_5 \\ \hline \end{array} $ = $ \begin{array} {|c|c|c|c|c|}\hline 0 & 0 & 48 & 20 & 8 \\ \hline \end{array} $
 
 ennél sokkal jobb megoldást lehet találni, ha behelyettesítéssel egyszerűsítjük az egyenletrendszert és $Z(X)=...$-ra rendezzük azt. Lesz egy (vagy több) generáló elem, ami alapján pozitív irányba mozdítható a $Z$ értéke (mohó algoritmusos közelítés). Ha nincsen ilyen (= az összes együttható negatív), akkor megtaláltunk egy $Z_{max}$-ot.
 
