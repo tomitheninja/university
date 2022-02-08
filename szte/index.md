@@ -21,3 +21,7 @@
 # SZTE II. szemeszter
 
 ## [opencv](./opencv)
+
+## Opkut
+
+- [gyakorlat](./opkut/gyak.md)
