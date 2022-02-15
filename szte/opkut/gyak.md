@@ -83,6 +83,6 @@ $Z(X) = 0 + X_1 + X_2 \to max$
 
 ennél sokkal jobb megoldást lehet találni, ha behelyettesítéssel egyszerűsítjük az egyenletrendszert és $Z(X)=...$-ra rendezzük azt. Lesz egy (vagy több) generáló elem, ami alapján pozitív irányba mozdítható a $Z$ értéke (mohó algoritmusos közelítés). Ha nincsen ilyen (= az összes együttható negatív), akkor megtaláltunk egy $Z_{max}$-ot.
 
-Bizi: Mivel csak egyenleteket alakítottunk át, ezért ez is megoldása az egyenletnek. Mivel $\forall$ együttható negít, ezért ez $max(Z)$.
+Bizi: Mivel csak egyenleteket alakítottunk át, ezért ez is megoldása az egyenletnek. Mivel $\forall$ együttható negatív, ezért ez $max(Z)$.
 
 HF: X_2-ből indulva megoldani
