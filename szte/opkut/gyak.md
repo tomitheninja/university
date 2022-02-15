@@ -50,7 +50,7 @@ $X_S + X_A = \underline{5.523}$
 
 #### mátrix eleminációval
 
-Ötlet: $\exist X_1, X_2, ..., X_n \ge 0$, hogy
+Ötlet: $\exists X_1, X_2, ..., X_n \ge 0$, hogy
 
 $8X_1 + 10X_2 + X_3 = 48$
 
@@ -76,7 +76,10 @@ $Z(X) = 0 + X_1 + X_2 \to max$
 
 #### Lehetséges megoldás
 
-$ X = \begin{array} {|c|c|c|c|c|}\hline X_1 & X_2 & X_3 & X_4 & X_5 \\ \hline \end{array} $ = $ \begin{array} {|c|c|c|c|c|}\hline 0 & 0 & 48 & 20 & 8 \\ \hline \end{array} $
+
+|x_1|x_2|x_3|x_4|x_5|
+|:--:|:--:|:--:|:--:|:--:|
+|0|0|48|20|8|
 
 ennél sokkal jobb megoldást lehet találni, ha behelyettesítéssel egyszerűsítjük az egyenletrendszert és $Z(X)=...$-ra rendezzük azt. Lesz egy (vagy több) generáló elem, ami alapján pozitív irányba mozdítható a $Z$ értéke (mohó algoritmusos közelítés). Ha nincsen ilyen (= az összes együttható negatív), akkor megtaláltunk egy $Z_{max}$-ot.
 
