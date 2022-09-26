@@ -1,0 +1,8 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    a, b: EGÉSZ
+ 
+  BE: a, b
+  KI: (a > 0 ÉS b > 0) VAGY (a < 0 ÉS b < 0) VAGY (a = 0 ÉS b = 0)
+PROGRAM_VEGE
+

@@ -1,0 +1,10 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    txt: SZÖVEG,
+    len: EGÉSZ
+ 
+  BE: txt
+  len := |txt|
+  KI: len > 0 ÉS ('0' <= txt[len-1] ÉS txt[len-1]  <= '9')
+PROGRAM_VEGE
+

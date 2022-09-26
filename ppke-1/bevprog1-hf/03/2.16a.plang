@@ -1,0 +1,21 @@
+PROGRAM p
+  VÁLTOZÓK:
+    txt, before, after: SZÖVEG,
+    hit_idx: EGÉSZ
+ 
+  BE: txt
+  before := "alma"
+  after := ""
+  CIKLUS AMÍG |txt| > 0
+    hit_idx := txt @ before
+    HA hit_idx = |txt| AKKOR
+      KI: txt
+      txt := ""
+    HA_VEGE
+    HA hit_idx < |txt| AKKOR
+      KI: txt[0:hit_idx]
+      KI: after
+      txt := txt[hit_idx + |before|:|txt|]
+    HA_VEGE
+  CIKLUS_VEGE
+PROGRAM_VEGE

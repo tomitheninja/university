@@ -1,0 +1,10 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    a, b, c: VALÓS
+ 
+  BE: a, b, c
+  KI: (-b + (b * b - 4 * a * c) ^ 0.5) / (2 * a)
+  KI: ' '
+  KI: (-b - (b * b - 4 * a * c) ^ 0.5) / (2 * a)
+PROGRAM_VEGE
+

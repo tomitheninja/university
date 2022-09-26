@@ -1,0 +1,19 @@
+PROGRAM p
+  VÁLTOZÓK:
+    txt, solution: SZÖVEG,
+    head_idx, tail_idx: EGÉSZ
+ 
+  BE: txt
+
+  head_idx := txt @ '('
+
+  HA head_idx = |txt| VAGY txt @ ')' < head_idx AKKOR
+    KI: "HIBA"
+  HA_VEGE
+  HA head_idx < |txt| AKKOR
+    tail_idx := head_idx + txt[head_idx:|txt| - 1] @ ')'
+    HA tail_idx < |txt| AKKOR
+      KI: txt[head_idx + 1:tail_idx]
+    HA_VEGE
+  HA_VEGE
+PROGRAM_VEGE

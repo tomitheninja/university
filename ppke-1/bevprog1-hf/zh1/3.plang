@@ -1,0 +1,26 @@
+PROGRAM p3
+    VÁLTOZÓK:
+        tomb: EGÉSZ[5],
+        i: EGÉSZ,
+        prev_odd, found: LOGIKAI
+
+    ** tömb feltöltése
+    i := 0
+    ciklus amíg i < |tomb|
+        BE: tomb[i]
+        i := i + 1
+    ciklus_vége
+
+    ** eldöntés tétele
+    prev_odd := HAMIS
+    found := HAMIS
+    i := 0
+    CIKLUS AMÍG i < |tomb| ÉS NEM FOUND
+        HA prev_odd ÉS tomb[i] MOD 2 = 1 AKKOR
+            found := IGAZ
+        HA_VÉGE
+        prev_odd := tomb[i] MOD 2 = 1
+        i := i + 1
+    CIKLUS_VÉGE
+    KI: found
+PROGRAM_VÉGE

@@ -1,0 +1,17 @@
+PROGRAM p
+    V��LTOZӓK:
+      sum_diff, x, y, n, i: EGɉSZ
+   
+    BE: n
+    BE: y
+    i := 1
+    sum_diff := 0
+    CIKLUS AM͍G i < n
+      x := y
+      BE: y
+      sum_diff := sum_diff + y - x
+      i := i + 1
+    CIKLUS_VɉGE
+    KI: VALӓS sum_diff / VALӓS n
+  PROGRAM_VɉGE
+  

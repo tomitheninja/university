@@ -1,0 +1,17 @@
+** Add meg egy tetsz?leges pozitív számsorozat elemeinek a négyzetgyök-összegét.
+PROGRAM p
+    VÁLTOZÓK:
+        i, n: EGÉSZ,
+       sum, x: VALÓS
+    
+    BE: n
+
+    i := 0
+    sum := 0
+    CIKLUS AMÍG i < n
+        BE: x
+        sum := sum + x^0.5
+        i := i + 1
+    CIKLUS_VÉGE
+    KI: sum
+PROGRAM_VÉGE

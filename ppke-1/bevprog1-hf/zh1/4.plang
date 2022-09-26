@@ -1,0 +1,36 @@
+PROGRAM p4
+    VÁLTOZÓK:
+        a, x, y, z, u, v, w: EGÉSZ,
+        exists: LOGIKAI
+    
+    BE: a
+    x := 0
+    y := 0
+    z := 0
+    exists := HAMIS
+    u := 1
+    CIKLUS AMÍG NEM  exists ÉS u*u < a
+        v := 1
+        CIKLUS AMÍG NEM  exists ÉS  v*v < a ÉS v <= u
+            w := 1
+            CIKLUS AMÍG NEM  exists ÉS  w*w < a ÉS w <= v
+                HA u*u + v*v + w*w = a AKKOR
+                    exists := iGAZ
+                HA_VÉGE
+                w := w + 1
+            CIKLUS_VÉGE
+            v := v + 1
+        CIKLUS_VÉGE
+        u := u + 1
+    CIKLUS_VÉGE
+    HA NEM exists AKKOR
+        KI: "Nem létezik"
+    KÜLÖNBEN
+        x := 0
+        y := a - 1
+        z := a - y
+        ** KI: x,y egész számok,
+        ** amikre igaz, hogy a=x+y+z és x=0 
+        KI: x, ' ', y
+    HA_VÉGE
+PROGRAM_VÉGE

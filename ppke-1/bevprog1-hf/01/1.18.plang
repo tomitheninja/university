@@ -1,0 +1,10 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    s1, s2: SZÖVEG,
+    min_len, min_s_len: EGÉSZ
+ 
+  BE: s1
+  BE: s2
+  KI: |s1| > 4 ÉS |s2| > 4 ÉS s1[0:5] = s2[0:5]
+PROGRAM_VEGE
+

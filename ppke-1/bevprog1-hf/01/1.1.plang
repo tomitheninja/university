@@ -1,0 +1,8 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    a: EGÉSZ
+ 
+  BE: a
+  KI: a MOD 2 = 0
+PROGRAM_VEGE
+

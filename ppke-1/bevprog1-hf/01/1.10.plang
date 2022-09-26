@@ -1,0 +1,8 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    v1x, v1y, v1z, v2x, v2y, v2z: VALÓS
+ 
+  BE: v1x, v1y, v1z, v2x, v2y, v2z
+  KI: v1x * v2x + v1y * v2y + v1z * v2z
+PROGRAM_VEGE
+

@@ -1,0 +1,9 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    a1, a2: VALÓS,
+    n: EGÉSZ
+ 
+  BE: a1, a2, n
+  KI: a1 + (a2-a1) * (n-1)
+PROGRAM_VEGE
+

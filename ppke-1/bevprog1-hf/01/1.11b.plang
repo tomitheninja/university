@@ -1,0 +1,8 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    a, b: VALÓS
+ 
+  BE: a, b
+  KI: (a*a + b*b) ^ 0.5
+PROGRAM_VEGE
+

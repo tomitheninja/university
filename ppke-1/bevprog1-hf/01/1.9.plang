@@ -1,0 +1,9 @@
+PROGRAM p1
+  VÁLTOZÓK:
+    a, b, c, s: VALÓS
+ 
+  BE: a, b, c
+  s := (a + b + c) / 2
+  KI: (s * (s - a) * (s - b) * (s - c)) ^ 0.5
+PROGRAM_VEGE
+

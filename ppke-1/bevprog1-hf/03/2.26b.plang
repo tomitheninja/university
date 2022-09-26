@@ -1,0 +1,19 @@
+PROGRAM p
+  VÁLTOZÓK:
+    n, max_n, i, j: EGÉSZ
+ 
+  BE: max_n
+  n := 1
+  CIKLUS AMÍG n <= max_n
+    i := 1
+    ** ki: n,": "
+    CIKLUS AMÍG i <= n
+      HA n MOD i = 0 AKKOR
+        KI: i, ' '
+      HA_VÉGE
+      i := i + 1
+    CIKLUS_VÉGE
+    KI: SV
+    n := n + 1
+  CIKLUS_VÉGE
+PROGRAM_VÉGE
